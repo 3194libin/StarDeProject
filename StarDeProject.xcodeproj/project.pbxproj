@@ -15,6 +15,7 @@
 		F88106311D596E31008A0EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F881062F1D596E31008A0EA3 /* LaunchScreen.storyboard */; };
 		F881063C1D596E31008A0EA3 /* StarDeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881063B1D596E31008A0EA3 /* StarDeProjectTests.swift */; };
 		F88106471D596E31008A0EA3 /* StarDeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106461D596E31008A0EA3 /* StarDeProjectUITests.swift */; };
+		F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106591D59B79D008A0EA3 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +36,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F88106201D596E31008A0EA3 /* StarDeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarDeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F88106231D596E31008A0EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F88106251D596E31008A0EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F88106201D596E31008A0EA3 /* 水田夏木.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "水田夏木.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88106231D596E31008A0EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		F88106251D596E31008A0EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		F88106281D596E31008A0EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F881062B1D596E31008A0EA3 /* StarDeProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarDeProject.xcdatamodel; sourceTree = "<group>"; };
-		F881062D1D596E31008A0EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F881062D1D596E31008A0EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		F88106301D596E31008A0EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F88106321D596E31008A0EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88106321D596E31008A0EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F88106371D596E31008A0EA3 /* StarDeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarDeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F881063B1D596E31008A0EA3 /* StarDeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDeProjectTests.swift; sourceTree = "<group>"; };
 		F881063D1D596E31008A0EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88106421D596E31008A0EA3 /* StarDeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarDeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88106461D596E31008A0EA3 /* StarDeProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDeProjectUITests.swift; sourceTree = "<group>"; };
 		F88106481D596E31008A0EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88106591D59B79D008A0EA3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,7 @@
 		F88106211D596E31008A0EA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F88106201D596E31008A0EA3 /* StarDeProject.app */,
+				F88106201D596E31008A0EA3 /* 水田夏木.app */,
 				F88106371D596E31008A0EA3 /* StarDeProjectTests.xctest */,
 				F88106421D596E31008A0EA3 /* StarDeProjectUITests.xctest */,
 			);
@@ -99,13 +101,10 @@
 		F88106221D596E31008A0EA3 /* StarDeProject */ = {
 			isa = PBXGroup;
 			children = (
-				F88106231D596E31008A0EA3 /* AppDelegate.swift */,
-				F88106251D596E31008A0EA3 /* ViewController.swift */,
-				F88106271D596E31008A0EA3 /* Main.storyboard */,
-				F881062D1D596E31008A0EA3 /* Assets.xcassets */,
-				F881062F1D596E31008A0EA3 /* LaunchScreen.storyboard */,
-				F88106321D596E31008A0EA3 /* Info.plist */,
-				F881062A1D596E31008A0EA3 /* StarDeProject.xcdatamodeld */,
+				F88106541D59B5DB008A0EA3 /* HelpTools */,
+				F88106551D59B5DB008A0EA3 /* Resource */,
+				F88106561D59B5DB008A0EA3 /* ThirdPartys */,
+				F88106571D59B5DB008A0EA3 /* ViewControllers */,
 			);
 			path = StarDeProject;
 			sourceTree = "<group>";
@@ -128,6 +127,50 @@
 			path = StarDeProjectUITests;
 			sourceTree = "<group>";
 		};
+		F88106541D59B5DB008A0EA3 /* HelpTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HelpTools;
+			sourceTree = "<group>";
+		};
+		F88106551D59B5DB008A0EA3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F88106231D596E31008A0EA3 /* AppDelegate.swift */,
+				F88106251D596E31008A0EA3 /* ViewController.swift */,
+				F88106271D596E31008A0EA3 /* Main.storyboard */,
+				F881062D1D596E31008A0EA3 /* Assets.xcassets */,
+				F881062F1D596E31008A0EA3 /* LaunchScreen.storyboard */,
+				F88106321D596E31008A0EA3 /* Info.plist */,
+				F881062A1D596E31008A0EA3 /* StarDeProject.xcdatamodeld */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F88106561D59B5DB008A0EA3 /* ThirdPartys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdPartys;
+			sourceTree = "<group>";
+		};
+		F88106571D59B5DB008A0EA3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F88106581D59B6E5008A0EA3 /* HomeVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F88106581D59B6E5008A0EA3 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				F88106591D59B79D008A0EA3 /* HomeViewController.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,7 +188,7 @@
 			);
 			name = StarDeProject;
 			productName = StarDeProject;
-			productReference = F88106201D596E31008A0EA3 /* StarDeProject.app */;
+			productReference = F88106201D596E31008A0EA3 /* 水田夏木.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F88106361D596E31008A0EA3 /* StarDeProjectTests */ = {
@@ -196,6 +239,7 @@
 				TargetAttributes = {
 					F881061F1D596E31008A0EA3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4F9PHZ9AF2;
 					};
 					F88106361D596E31008A0EA3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -262,6 +306,7 @@
 				F88106261D596E31008A0EA3 /* ViewController.swift in Sources */,
 				F88106241D596E31008A0EA3 /* AppDelegate.swift in Sources */,
 				F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */,
+				F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +348,7 @@
 				F88106281D596E31008A0EA3 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F881062F1D596E31008A0EA3 /* LaunchScreen.storyboard */ = {
@@ -311,6 +357,7 @@
 				F88106301D596E31008A0EA3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -393,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,10 +452,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StarDeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DX.StarDeProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
+				PRODUCT_NAME = "水田夏木";
 			};
 			name = Debug;
 		};
@@ -416,10 +465,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StarDeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DX.StarDeProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
+				PRODUCT_NAME = "水田夏木";
 			};
 			name = Release;
 		};
@@ -514,7 +565,8 @@
 				F881062B1D596E31008A0EA3 /* StarDeProject.xcdatamodel */,
 			);
 			currentVersion = F881062B1D596E31008A0EA3 /* StarDeProject.xcdatamodel */;
-			path = StarDeProject.xcdatamodeld;
+			name = StarDeProject.xcdatamodeld;
+			path = ../StarDeProject.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
