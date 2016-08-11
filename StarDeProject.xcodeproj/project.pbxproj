@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */; };
+		F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B341D5C223B00F5A8E7 /* STMacro.swift */; };
+		F87B8B381D5C454000F5A8E7 /* HomeTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */; };
+		F87B8B3B1D5C45EA00F5A8E7 /* MathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B3A1D5C45EA00F5A8E7 /* MathController.swift */; };
+		F87B8B3D1D5C56AC00F5A8E7 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B3C1D5C56AC00F5A8E7 /* ViewController1.swift */; };
 		F88106241D596E31008A0EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106231D596E31008A0EA3 /* AppDelegate.swift */; };
-		F88106261D596E31008A0EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106251D596E31008A0EA3 /* ViewController.swift */; };
 		F88106291D596E31008A0EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88106271D596E31008A0EA3 /* Main.storyboard */; };
 		F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F881062A1D596E31008A0EA3 /* StarDeProject.xcdatamodeld */; };
 		F881062E1D596E31008A0EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F881062D1D596E31008A0EA3 /* Assets.xcassets */; };
@@ -36,9 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNavigationController.swift; sourceTree = "<group>"; };
+		F87B8B341D5C223B00F5A8E7 /* STMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMacro.swift; sourceTree = "<group>"; };
+		F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabbarController.swift; sourceTree = "<group>"; };
+		F87B8B3A1D5C45EA00F5A8E7 /* MathController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathController.swift; sourceTree = "<group>"; };
+		F87B8B3C1D5C56AC00F5A8E7 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		F88106201D596E31008A0EA3 /* 水田夏木.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "水田夏木.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88106231D596E31008A0EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		F88106251D596E31008A0EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		F88106281D596E31008A0EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F881062B1D596E31008A0EA3 /* StarDeProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarDeProject.xcdatamodel; sourceTree = "<group>"; };
 		F881062D1D596E31008A0EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +86,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F87B8B301D5C11E900F5A8E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F87B8B331D5C14BF00F5A8E7 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				F87B8B341D5C223B00F5A8E7 /* STMacro.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		F87B8B391D5C459500F5A8E7 /* MathVC */ = {
+			isa = PBXGroup;
+			children = (
+				F87B8B3A1D5C45EA00F5A8E7 /* MathController.swift */,
+			);
+			path = MathVC;
+			sourceTree = "<group>";
+		};
 		F88106171D596E31008A0EA3 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +162,8 @@
 		F88106541D59B5DB008A0EA3 /* HelpTools */ = {
 			isa = PBXGroup;
 			children = (
+				F87B8B331D5C14BF00F5A8E7 /* Macro */,
+				F87B8B301D5C11E900F5A8E7 /* Controller */,
 			);
 			path = HelpTools;
 			sourceTree = "<group>";
@@ -138,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				F88106231D596E31008A0EA3 /* AppDelegate.swift */,
-				F88106251D596E31008A0EA3 /* ViewController.swift */,
+				F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */,
 				F88106271D596E31008A0EA3 /* Main.storyboard */,
 				F881062D1D596E31008A0EA3 /* Assets.xcassets */,
 				F881062F1D596E31008A0EA3 /* LaunchScreen.storyboard */,
@@ -158,6 +192,7 @@
 		F88106571D59B5DB008A0EA3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F87B8B391D5C459500F5A8E7 /* MathVC */,
 				F88106581D59B6E5008A0EA3 /* HomeVC */,
 			);
 			path = ViewControllers;
@@ -167,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				F88106591D59B79D008A0EA3 /* HomeViewController.swift */,
+				F87B8B3C1D5C56AC00F5A8E7 /* ViewController1.swift */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -303,8 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F88106261D596E31008A0EA3 /* ViewController.swift in Sources */,
+				F87B8B3D1D5C56AC00F5A8E7 /* ViewController1.swift in Sources */,
 				F88106241D596E31008A0EA3 /* AppDelegate.swift in Sources */,
+				F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */,
+				F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */,
+				F87B8B381D5C454000F5A8E7 /* HomeTabbarController.swift in Sources */,
+				F87B8B3B1D5C45EA00F5A8E7 /* MathController.swift in Sources */,
 				F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */,
 				F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */,
 			);
@@ -539,6 +579,7 @@
 				F881064D1D596E31008A0EA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F881064E1D596E31008A0EA3 /* Build configuration list for PBXNativeTarget "StarDeProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +588,7 @@
 				F88106501D596E31008A0EA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F88106511D596E31008A0EA3 /* Build configuration list for PBXNativeTarget "StarDeProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +597,7 @@
 				F88106531D596E31008A0EA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

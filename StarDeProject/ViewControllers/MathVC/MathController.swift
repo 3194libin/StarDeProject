@@ -1,35 +1,20 @@
 //
-//  HomeViewController.swift
+//  MathController.swift
 //  StarDeProject
 //
-//  Created by star on 16/8/9.
+//  Created by star on 16/8/11.
 //  Copyright © 2016年 star. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class MathController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.grayColor()
-        self.title = "主页"
-        
-        let nextBn:UIButton = UIButton.init(frame: CGRectMake(20, 100, 100, 40))
-        nextBn.setTitle("跳转", forState: UIControlState.Normal)
-        self.view.addSubview(nextBn)
-        nextBn.addTarget(self, action: #selector(goToNaxtView), forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.backgroundColor = UIColor.redColor()
         // Do any additional setup after loading the view.
     }
-    
-    //无效
-    func goToNaxtView(){
-        let vc1 = ViewController1()
-        self.navigationController?.pushViewController(vc1, animated: true)
-        
-    }
-     
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

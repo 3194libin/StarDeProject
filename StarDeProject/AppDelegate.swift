@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.makeKeyAndVisible()
         // 检测用户是不是第一次启动
-        window?.rootViewController = HomeViewController()
+        window?.rootViewController = HomeTabbarController()
         return true
     }
 
