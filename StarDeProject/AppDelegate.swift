@@ -19,9 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         // 创建 window
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let nav = UINavigationController.init(rootViewController: HomeTabbarController())
+        window?.rootViewController = nav
+        window?.backgroundColor = UIColor.whiteColor()
         window?.makeKeyAndVisible()
-        // 检测用户是不是第一次启动
-        window?.rootViewController = HomeTabbarController()
         return true
     }
 

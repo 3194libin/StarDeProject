@@ -14,21 +14,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.grayColor()
         self.title = "主页"
-        
-        let nextBn:UIButton = UIButton.init(frame: CGRectMake(20, 100, 100, 40))
-        nextBn.setTitle("跳转", forState: UIControlState.Normal)
-        self.view.addSubview(nextBn)
-        nextBn.addTarget(self, action: #selector(goToNaxtView), forControlEvents: UIControlEvents.TouchUpInside)
+        self.navigationController?.navigationBar.backgroundColor = UIColor.blueColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.redColor()
         // Do any additional setup after loading the view.
     }
-    
-    //无效
-    func goToNaxtView(){
-        let vc1 = ViewController1()
-        self.navigationController?.pushViewController(vc1, animated: true)
-        
-    }
-     
 
 
     override func didReceiveMemoryWarning() {

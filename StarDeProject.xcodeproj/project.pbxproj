@@ -11,7 +11,6 @@
 		F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B341D5C223B00F5A8E7 /* STMacro.swift */; };
 		F87B8B381D5C454000F5A8E7 /* HomeTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */; };
 		F87B8B3B1D5C45EA00F5A8E7 /* MathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B3A1D5C45EA00F5A8E7 /* MathController.swift */; };
-		F87B8B3D1D5C56AC00F5A8E7 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B3C1D5C56AC00F5A8E7 /* ViewController1.swift */; };
 		F88106241D596E31008A0EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106231D596E31008A0EA3 /* AppDelegate.swift */; };
 		F88106291D596E31008A0EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88106271D596E31008A0EA3 /* Main.storyboard */; };
 		F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F881062A1D596E31008A0EA3 /* StarDeProject.xcdatamodeld */; };
@@ -44,7 +43,6 @@
 		F87B8B341D5C223B00F5A8E7 /* STMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMacro.swift; sourceTree = "<group>"; };
 		F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabbarController.swift; sourceTree = "<group>"; };
 		F87B8B3A1D5C45EA00F5A8E7 /* MathController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathController.swift; sourceTree = "<group>"; };
-		F87B8B3C1D5C56AC00F5A8E7 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		F88106201D596E31008A0EA3 /* 水田夏木.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "水田夏木.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88106231D596E31008A0EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		F88106281D596E31008A0EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				F88106591D59B79D008A0EA3 /* HomeViewController.swift */,
-				F87B8B3C1D5C56AC00F5A8E7 /* ViewController1.swift */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -339,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F87B8B3D1D5C56AC00F5A8E7 /* ViewController1.swift in Sources */,
 				F88106241D596E31008A0EA3 /* AppDelegate.swift in Sources */,
 				F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */,
 				F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */,
