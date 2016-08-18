@@ -8,11 +8,12 @@
 
 import UIKit
 
-class MathController: UIViewController {
+class MathController: STBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.redColor()
+        setNavigation("数学", hasBackBtn: false)
         // Do any additional setup after loading the view.
     }
 

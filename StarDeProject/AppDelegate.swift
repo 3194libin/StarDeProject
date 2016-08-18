@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 创建 window
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let nav = UINavigationController.init(rootViewController: HomeTabbarController())
+        nav.setNavigationBarHidden(true, animated: false)
         window?.rootViewController = nav
         window?.backgroundColor = UIColor.whiteColor()
         window?.makeKeyAndVisible()

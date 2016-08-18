@@ -8,14 +8,12 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: STBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.grayColor()
-        self.title = "主页"
-        self.navigationController?.navigationBar.backgroundColor = UIColor.blueColor()
-        self.navigationController?.navigationBar.tintColor = UIColor.redColor()
+        setNavigation("美女", hasBackBtn: false)
         // Do any additional setup after loading the view.
     }
 

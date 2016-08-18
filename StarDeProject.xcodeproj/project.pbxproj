@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810E9D251D66106B0064E6A7 /* STBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E9D241D66106B0064E6A7 /* STBaseController.swift */; };
 		F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */; };
 		F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B341D5C223B00F5A8E7 /* STMacro.swift */; };
 		F87B8B381D5C454000F5A8E7 /* HomeTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		810E9D241D66106B0064E6A7 /* STBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STBaseController.swift; sourceTree = "<group>"; };
 		F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNavigationController.swift; sourceTree = "<group>"; };
 		F87B8B341D5C223B00F5A8E7 /* STMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMacro.swift; sourceTree = "<group>"; };
 		F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabbarController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */,
+				810E9D241D66106B0064E6A7 /* STBaseController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				F87B8B3B1D5C45EA00F5A8E7 /* MathController.swift in Sources */,
 				F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */,
 				F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */,
+				810E9D251D66106B0064E6A7 /* STBaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+//swift没有宏定义，可以用let代替
+let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
+let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height
+
 func RGBColor(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor {
     return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: 1)
 }
