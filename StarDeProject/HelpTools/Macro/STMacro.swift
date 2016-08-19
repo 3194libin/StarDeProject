@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+//第三方库
+import Alamofire
+
 //swift没有宏定义，可以用let代替
 let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height

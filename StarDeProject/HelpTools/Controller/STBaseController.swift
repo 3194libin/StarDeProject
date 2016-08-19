@@ -22,9 +22,10 @@ class STBaseController: UIViewController {
         headerView.backgroundColor = RGBColor(56, g: 156, b: 213)
         self.view.addSubview(headerView)
         
-        let titleLabel = UILabel.init(frame: CGRectMake(100, 10, SCREEN_WIDTH-200, 44))
+        let titleLabel = UILabel.init(frame: CGRectMake(100, 20, SCREEN_WIDTH-200, 44))
         titleLabel.text = title
         titleLabel.textColor = UIColor.blackColor()
+        titleLabel.font = UIFont.systemFontOfSize(20)
         titleLabel.textAlignment = NSTextAlignment.Center
         headerView.addSubview(titleLabel)
         
