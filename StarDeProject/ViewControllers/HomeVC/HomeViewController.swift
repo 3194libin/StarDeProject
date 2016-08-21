@@ -10,12 +10,13 @@ import UIKit
 import Alamofire
 class HomeViewController: STBaseController {
 
-    let mengchongUrl = "http://www.ivsky.com/bizhi/liushishi_v37287/"
+    //http://www.ivsky.com/bizhi/liushishi_v37287/
+    let mengchongUrl = "http://www.ivsky.com/search.php?q=%E5%88%98%E8%AF%97%E8%AF%97"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.grayColor()
+        self.view.backgroundColor = UIColor.whiteColor()
         setNavigation("美女", hasBackBtn: false)
         
         //天堂图片网
@@ -42,9 +43,15 @@ class HomeViewController: STBaseController {
     private func addIMage(){
         let url:NSURL = NSURL(string: "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg")!
         let imageData:NSData? = NSData(contentsOfURL:url )
-        let image0 = UIImage(data: imageData!)
-        let imageView = UIImageView.init(frame: CGRectMake(5, 100, SCREEN_WIDTH-10, (SCREEN_WIDTH-10)*1080/1920))
-        imageView.image = image0
+        let imageView = UIImageView.init(frame: CGRectMake(5, 80-64, SCREEN_WIDTH-10, (SCREEN_WIDTH-10)*1080/1920))
+        if imageData != nil {
+            let image0 = UIImage(data: imageData!)
+            imageView.image = image0
+        }
+        else
+        {
+            imageView.backgroundColor = UIColor.lightGrayColor()
+        }
         self.view.addSubview(imageView)
     }
     override func didReceiveMemoryWarning() {
