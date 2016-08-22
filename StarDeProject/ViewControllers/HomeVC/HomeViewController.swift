@@ -28,15 +28,15 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
         requestNetData()
         
         //设置TableView
-        imageUrls = ["http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
-                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
-                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
-                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
-                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
-                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
-                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
+        imageUrls = ["http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-001.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-002.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-003.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-004.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-005.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-006.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-007.jpg",
                      "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg"]
-        let tableView = UITableView.init(frame: CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64), style: UITableViewStyle.Plain)
+        let tableView = UITableView.init(frame: CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64-44), style: UITableViewStyle.Plain)
         tableView.dataSource = self
         tableView.delegate = self
         self.view.addSubview(tableView)
@@ -78,7 +78,7 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
                 view.removeFromSuperview()
             }
         }
-        let url:NSURL = NSURL(string: "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg")!
+        let url:NSURL = NSURL(string: imageUrls![indexPath.row])!
         let imageData:NSData? = NSData(contentsOfURL:url )
         let imageView = UIImageView.init()
         imageView.layer.cornerRadius = 5.0
@@ -94,7 +94,7 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
         //使用布局工具SnapKit
         imageView.snp_makeConstraints { (make) in
             make.size.equalTo(CGSizeMake(SCREEN_WIDTH-10, (SCREEN_WIDTH-10)*1080/1920))
-            make.top.equalToSuperview().offset(CGPointMake(5, 80))
+            make.top.equalToSuperview().offset(CGPointMake(-5, 80))
         }
         return cell!
     }
