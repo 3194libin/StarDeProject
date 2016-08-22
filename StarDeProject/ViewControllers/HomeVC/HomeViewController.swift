@@ -8,10 +8,15 @@
 
 import UIKit
 import Alamofire
-class HomeViewController: STBaseController {
+import SnapKit
+
+let cellId = "STCellId"
+
+class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSource{
 
     //http://www.ivsky.com/bizhi/liushishi_v37287/
     let mengchongUrl = "http://www.ivsky.com/search.php?q=%E5%88%98%E8%AF%97%E8%AF%97"
+    var imageUrls:[String]?
     
     
     override func viewDidLoad() {
@@ -21,7 +26,20 @@ class HomeViewController: STBaseController {
         
         //天堂图片网
         requestNetData()
-        addIMage()
+        
+        //设置TableView
+        imageUrls = ["http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg",
+                     "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg"]
+        let tableView = UITableView.init(frame: CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64), style: UITableViewStyle.Plain)
+        tableView.dataSource = self
+        tableView.delegate = self
+        self.view.addSubview(tableView)
         // Do any additional setup after loading the view.
     }
 
@@ -40,10 +58,30 @@ class HomeViewController: STBaseController {
         }
     }
     
-    private func addIMage(){
+    
+    //Mark :TableView Datasource
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (imageUrls?.count)!
+    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 180.0
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellId)
+        if cell==nil
+        {
+            cell = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: cellId)
+        }
+        else
+        {
+            for view in (cell?.contentView.subviews)! {
+                view.removeFromSuperview()
+            }
+        }
         let url:NSURL = NSURL(string: "http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-008.jpg")!
         let imageData:NSData? = NSData(contentsOfURL:url )
-        let imageView = UIImageView.init(frame: CGRectMake(5, 80-64, SCREEN_WIDTH-10, (SCREEN_WIDTH-10)*1080/1920))
+        let imageView = UIImageView.init()
+        imageView.layer.cornerRadius = 5.0
         if imageData != nil {
             let image0 = UIImage(data: imageData!)
             imageView.image = image0
@@ -52,7 +90,13 @@ class HomeViewController: STBaseController {
         {
             imageView.backgroundColor = UIColor.lightGrayColor()
         }
-        self.view.addSubview(imageView)
+        cell?.contentView.addSubview(imageView)
+        //使用布局工具SnapKit
+        imageView.snp_makeConstraints { (make) in
+            make.size.equalTo(CGSizeMake(SCREEN_WIDTH-10, (SCREEN_WIDTH-10)*1080/1920))
+            make.top.equalToSuperview().offset(CGPointMake(5, 80))
+        }
+        return cell!
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -71,3 +115,5 @@ class HomeViewController: STBaseController {
     */
 
 }
+
+

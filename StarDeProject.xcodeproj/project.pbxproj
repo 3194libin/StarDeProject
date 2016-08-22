@@ -22,6 +22,7 @@
 		F881063C1D596E31008A0EA3 /* StarDeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881063B1D596E31008A0EA3 /* StarDeProjectTests.swift */; };
 		F88106471D596E31008A0EA3 /* StarDeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106461D596E31008A0EA3 /* StarDeProjectUITests.swift */; };
 		F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106591D59B79D008A0EA3 /* HomeViewController.swift */; };
+		F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F88106461D596E31008A0EA3 /* StarDeProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDeProjectUITests.swift; sourceTree = "<group>"; };
 		F88106481D596E31008A0EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88106591D59B79D008A0EA3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 		F88106571D59B5DB008A0EA3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F8D7930A1D6AD780006D2209 /* Extension */,
 				F87B8B391D5C459500F5A8E7 /* MathVC */,
 				F88106581D59B6E5008A0EA3 /* HomeVC */,
 			);
@@ -240,6 +243,14 @@
 				F88106591D59B79D008A0EA3 /* HomeViewController.swift */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		F8D7930A1D6AD780006D2209 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81B5D5081D68DA61006D5834 /* StringHandle.swift in Sources */,
+				F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */,
 				F88106241D596E31008A0EA3 /* AppDelegate.swift in Sources */,
 				F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */,
 				F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */,
@@ -585,7 +597,7 @@
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-F9PHZ9AF2.com.zhongxunchao.StarDeProject";
+				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme..StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
 			};
@@ -601,7 +613,7 @@
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-F9PHZ9AF2.com.zhongxunchao.StarDeProject";
+				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme..StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
 			};

@@ -23,14 +23,20 @@ class HomeTabbarController: UITabBarController {
         let fontSize:CGFloat = 25.0
         let homeVC = HomeViewController()
         homeVC.tabBarItem.title = "主页"
-        homeVC.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -10)
-        homeVC.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:RGBColor(101, g: 205, b: 253),NSFontAttributeName:UIFont.boldSystemFontOfSize(fontSize)], forState: UIControlState.Normal)
+        homeVC.tabBarItem.image = UIImage(named: "TabBar_home_23x23_")
+        homeVC.tabBarItem.selectedImage = UIImage(named: "TabBar_home_23x23_selected")
+ 
         let mathVC = MathController()
         mathVC.tabBarItem.title = "数学"
-        mathVC.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -10)
-        mathVC.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:RGBColor(101, g: 205, b: 253),NSFontAttributeName:UIFont.boldSystemFontOfSize(fontSize)], forState: UIControlState.Normal)
+        mathVC.tabBarItem.image = UIImage(named: "TabBar_gift_23x23_")
+        mathVC.tabBarItem.selectedImage = UIImage(named: "TabBar_gift_23x23_selected")
         
-        self.viewControllers = [homeVC,mathVC]
+        let extensionVC = ExtensionController()
+        extensionVC.tabBarItem.title = "扩展"
+        extensionVC.tabBarItem.image = UIImage(named: "TabBar_category_23x23_")
+        extensionVC.tabBarItem.selectedImage = UIImage(named: "TabBar_category_23x23_selected")
+        
+        self.viewControllers = [homeVC,mathVC,extensionVC]
     }
     
     override func didReceiveMemoryWarning() {
