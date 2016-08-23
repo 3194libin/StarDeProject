@@ -17,6 +17,8 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
     //http://www.ivsky.com/bizhi/liushishi_v37287/
     let mengchongUrl = "http://www.ivsky.com/search.php?q=%E5%88%98%E8%AF%97%E8%AF%97"
     var imageUrls:[String]?
+    let imageCache:NSCache = NSCache.init()
+    
     
     
     override func viewDidLoad() {
@@ -78,23 +80,39 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
                 view.removeFromSuperview()
             }
         }
+        //首先尝试从缓存中去取，如果没有则从网络上重新加载;但是下拉刷新时应重新请求所有网络图片，清除缓存？
         let url:NSURL = NSURL(string: imageUrls![indexPath.row])!
-        let imageData:NSData? = NSData(contentsOfURL:url )
+        let cacheUrl = NSString.init(format: "%d", indexPath.row)
+        let imageDataTemp = self.imageCache.objectForKey(cacheUrl)
+        var imageData:NSData = NSData.init()
+        if imageDataTemp?.count>0 {
+            imageData = imageDataTemp as! NSData
+        }
+        
+        
         let imageView = UIImageView.init()
         imageView.layer.cornerRadius = 5.0
-        if imageData != nil {
-            let image0 = UIImage(data: imageData!)
+        if imageData.length>0 {
+            let image0 = UIImage(data: imageData)
             imageView.image = image0
         }
         else
         {
+            //首先从网络去获取，获取不到只显示背景
             imageView.backgroundColor = UIColor.lightGrayColor()
+            imageData = NSData.init(contentsOfURL: url)!//这一行的错误怎么办
+            if imageData.length>0 {
+                let image0 = UIImage(data: imageData)
+                imageView.image = image0
+                //同时缓存到本地
+                self.imageCache.setObject(imageData, forKey: cacheUrl)
+            }
         }
         cell?.contentView.addSubview(imageView)
         //使用布局工具SnapKit
         imageView.snp_makeConstraints { (make) in
             make.size.equalTo(CGSizeMake(SCREEN_WIDTH-10, (SCREEN_WIDTH-10)*1080/1920))
-            make.top.equalToSuperview().offset(CGPointMake(-5, 80))
+            make.top.equalToSuperview().offset(CGPointMake(-5, 2))
         }
         return cell!
     }
