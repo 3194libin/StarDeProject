@@ -100,12 +100,12 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
         {
             //首先从网络去获取，获取不到只显示背景
             imageView.backgroundColor = UIColor.lightGrayColor()
-            imageData = NSData.init(contentsOfURL: url)!//这一行的错误怎么办
-            if imageData.length>0 {
-                let image0 = UIImage(data: imageData)
+            //必须这么写？如果不能马上判断怎么办？
+            if let urlData = NSData(contentsOfURL: url) {
+                let image0 = UIImage(data: urlData)
                 imageView.image = image0
                 //同时缓存到本地
-                self.imageCache.setObject(imageData, forKey: cacheUrl)
+                self.imageCache.setObject(urlData, forKey: cacheUrl)
             }
         }
         cell?.contentView.addSubview(imageView)
