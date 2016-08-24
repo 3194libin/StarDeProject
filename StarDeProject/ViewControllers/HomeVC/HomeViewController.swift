@@ -16,10 +16,10 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
 
     //http://www.ivsky.com/bizhi/liushishi_v37287/
     //http://www.ivsky.com/search.php?q=%E5%88%98%E8%AF%97%E8%AF%97
-    let mengchongUrl = "http://www.tupianzj.com/meinv/xinggan/"
+    let mengchongUrl = "http://www.quanjing.com/"
     var imageUrls:[String]?
     let imageCache:NSCache = NSCache.init()
-    
+    var nextUrls:[String]? = []
     
     
     override func viewDidLoad() {
@@ -29,6 +29,7 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
         
         //天堂图片网
         requestNetData()
+        setNextUrls()
         
         //设置TableView
         imageUrls = ["http://img.ivsky.com/img/bizhi/t/201608/04/liushishi-001.jpg",
@@ -86,30 +87,6 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
         let imageView = UIImageView.init()
         imageView.layer.cornerRadius = 5.0
         imageView.backgroundColor = UIColor.lightGrayColor()
-//        let url:NSURL = NSURL(string: imageUrls![indexPath.row])!
-//        let cacheUrl = NSString.init(format: "%d", indexPath.row)
-//        let imageDataTemp = self.imageCache.objectForKey(cacheUrl)
-//        if imageData.length>0 {
-//            let image0 = UIImage(data: imageData)
-//            imageView.image = image0
-//        }
-//        else
-//        {
-//            //首先从网络去获取，获取不到只显示背景
-//            
-//            //必须这么写？如果不能马上判断怎么办？
-//            dispatch_async(dispatch_get_global_queue(0, 0), { 
-//                if let urlData = NSData(contentsOfURL: url)  {
-//                    let image0 = UIImage(data: urlData)
-//                    //同时缓存到本地
-//                    self.imageCache.setObject(urlData, forKey: cacheUrl)
-//                    
-//                    dispatch_async(dispatch_get_main_queue(), { 
-//                                            imageView.image = image0
-//                    })
-//                }
-//            })
-//        }
         imageView.kf_setImageWithURL(NSURL(string:imageUrls![indexPath.row]))
         cell?.contentView.addSubview(imageView)
         //使用布局工具SnapKit
@@ -122,6 +99,23 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("您选中了第\(indexPath.row)行")
+        let webVC = WebController()
+        webVC.stUrl = nextUrls![indexPath.row]
+        self.navigationController?.pushViewController(webVC, animated: true)
+    }
+    
+    func setNextUrls(){
+        
+        let keyArray = ["婴儿","家庭","配饰","健身","时尚","别墅",
+                        "运动","家居","城市","科技","道路","商务",
+                        "旅游","美食","健康","名车","爱情","田园风光",
+                        "公路","名车","驾驭","速度","奥迪","道路"];
+        for i in 0 ..< keyArray.count
+        {
+            var startString = "http://www.quanjing.com/search.aspx?q=%E8%BF%90%E5%8A%A8||1|60|1|2||||"
+            startString.replaceRange(startString.rangeOfString("%E8%BF%90%E5%8A%A8")!, with: keyArray[i])
+            nextUrls?.append(startString)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

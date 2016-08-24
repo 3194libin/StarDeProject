@@ -12,7 +12,7 @@ class STBaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
     
@@ -31,9 +31,11 @@ class STBaseController: UIViewController {
         
         if hasBackBtn//添加返回键
         {
-            let backBtn = UIButton.init(frame: CGRectMake(10, 10, 31, 31))
+            let backBtn = UIButton.init(frame: CGRectMake(10, 27, 31, 31))
             backBtn.setImage(UIImage.init(imageLiteral: "back"), forState: UIControlState.Normal)
             backBtn.addTarget(self, action: #selector(backToLastVC), forControlEvents: UIControlEvents.TouchUpInside)
+            backBtn.backgroundColor = UIColor.redColor()
+            headerView.addSubview(backBtn)
         }
     }
 
