@@ -9,13 +9,14 @@
 import UIKit
 import Alamofire
 import SnapKit
-
+import Kingfisher
 let cellId = "STCellId"
 
 class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSource{
 
     //http://www.ivsky.com/bizhi/liushishi_v37287/
-    let mengchongUrl = "http://www.ivsky.com/search.php?q=%E5%88%98%E8%AF%97%E8%AF%97"
+    //http://www.ivsky.com/search.php?q=%E5%88%98%E8%AF%97%E8%AF%97
+    let mengchongUrl = "http://www.tupianzj.com/meinv/xinggan/"
     var imageUrls:[String]?
     let imageCache:NSCache = NSCache.init()
     
@@ -80,41 +81,47 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
                 view.removeFromSuperview()
             }
         }
-        //首先尝试从缓存中去取，如果没有则从网络上重新加载;但是下拉刷新时应重新请求所有网络图片，清除缓存？
-        let url:NSURL = NSURL(string: imageUrls![indexPath.row])!
-        let cacheUrl = NSString.init(format: "%d", indexPath.row)
-        let imageDataTemp = self.imageCache.objectForKey(cacheUrl)
-        var imageData:NSData = NSData.init()
-        if imageDataTemp?.count>0 {
-            imageData = imageDataTemp as! NSData
-        }
         
         
         let imageView = UIImageView.init()
         imageView.layer.cornerRadius = 5.0
-        if imageData.length>0 {
-            let image0 = UIImage(data: imageData)
-            imageView.image = image0
-        }
-        else
-        {
-            //首先从网络去获取，获取不到只显示背景
-            imageView.backgroundColor = UIColor.lightGrayColor()
-            //必须这么写？如果不能马上判断怎么办？
-            if let urlData = NSData(contentsOfURL: url) {
-                let image0 = UIImage(data: urlData)
-                imageView.image = image0
-                //同时缓存到本地
-                self.imageCache.setObject(urlData, forKey: cacheUrl)
-            }
-        }
+        imageView.backgroundColor = UIColor.lightGrayColor()
+//        let url:NSURL = NSURL(string: imageUrls![indexPath.row])!
+//        let cacheUrl = NSString.init(format: "%d", indexPath.row)
+//        let imageDataTemp = self.imageCache.objectForKey(cacheUrl)
+//        if imageData.length>0 {
+//            let image0 = UIImage(data: imageData)
+//            imageView.image = image0
+//        }
+//        else
+//        {
+//            //首先从网络去获取，获取不到只显示背景
+//            
+//            //必须这么写？如果不能马上判断怎么办？
+//            dispatch_async(dispatch_get_global_queue(0, 0), { 
+//                if let urlData = NSData(contentsOfURL: url)  {
+//                    let image0 = UIImage(data: urlData)
+//                    //同时缓存到本地
+//                    self.imageCache.setObject(urlData, forKey: cacheUrl)
+//                    
+//                    dispatch_async(dispatch_get_main_queue(), { 
+//                                            imageView.image = image0
+//                    })
+//                }
+//            })
+//        }
+        imageView.kf_setImageWithURL(NSURL(string:imageUrls![indexPath.row]))
         cell?.contentView.addSubview(imageView)
         //使用布局工具SnapKit
         imageView.snp_makeConstraints { (make) in
             make.size.equalTo(CGSizeMake(SCREEN_WIDTH-10, (SCREEN_WIDTH-10)*1080/1920))
-            make.top.equalToSuperview().offset(CGPointMake(-5, 2))
+            make.top.equalToSuperview().offset(CGPointMake(0, 2))
+            make.left.equalToSuperview().offset(5)
         }
         return cell!
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("您选中了第\(indexPath.row)行")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
