@@ -110,11 +110,14 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
                         "运动","家居","城市","科技","道路","商务",
                         "旅游","美食","健康","名车","爱情","田园风光",
                         "公路","名车","驾驭","速度","奥迪","道路"];
+        let characterSet = NSCharacterSet(charactersInString: "`#%^{}\"[]|\\<>").invertedSet
+        
         for i in 0 ..< keyArray.count
         {
             var startString = "http://www.quanjing.com/search.aspx?q=%E8%BF%90%E5%8A%A8||1|60|1|2||||"
             startString.replaceRange(startString.rangeOfString("%E8%BF%90%E5%8A%A8")!, with: keyArray[i])
-            nextUrls?.append(startString)
+            let encodingString = startString.stringByAddingPercentEncodingWithAllowedCharacters(characterSet)
+            nextUrls?.append(encodingString!)
         }
     }
     override func didReceiveMemoryWarning() {

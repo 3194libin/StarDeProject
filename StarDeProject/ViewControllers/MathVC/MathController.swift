@@ -7,13 +7,16 @@
 //
 
 import UIKit
-
+import STMathKit
 class MathController: STBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.redColor()
+        self.view.backgroundColor = UIColor.yellowColor()
         setNavigation("数学", hasBackBtn: false)
+        
+        //运用自己建立的框架
+        
         // Do any additional setup after loading the view.
     }
 

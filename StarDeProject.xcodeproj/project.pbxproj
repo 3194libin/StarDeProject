@@ -23,6 +23,7 @@
 		F88106471D596E31008A0EA3 /* StarDeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106461D596E31008A0EA3 /* StarDeProjectUITests.swift */; };
 		F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106591D59B79D008A0EA3 /* HomeViewController.swift */; };
 		F8ADC10D1D6D7056003B5D42 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADC10C1D6D7056003B5D42 /* WebController.swift */; };
+		F8BEEC521D6EC7B20016BC1B /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BEEC511D6EC7B20016BC1B /* STMathKit.framework */; };
 		F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		F88106481D596E31008A0EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88106591D59B79D008A0EA3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F8ADC10C1D6D7056003B5D42 /* WebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+		F8BEEC511D6EC7B20016BC1B /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STMathKit.framework; sourceTree = "<group>"; };
 		F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BEEC521D6EC7B20016BC1B /* STMathKit.framework in Frameworks */,
 				251AD5A2CE6AB6D86ECDB8E3 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +228,7 @@
 		F88106561D59B5DB008A0EA3 /* ThirdPartys */ = {
 			isa = PBXGroup;
 			children = (
+				F8BEEC511D6EC7B20016BC1B /* STMathKit.framework */,
 			);
 			path = ThirdPartys;
 			sourceTree = "<group>";
@@ -598,6 +602,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StarDeProject/ThirdPartys",
+				);
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -614,6 +622,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StarDeProject/ThirdPartys",
+				);
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
