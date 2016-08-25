@@ -10,10 +10,14 @@
 
 @interface FitResultModel : NSObject
 
-@property (nonatomic, assign)float factorNum;//乘数
+- (instancetype)initWithFactor:(float)factor
+                     addtional:(float)addtional
+                      relation:(float)relation;
 
-@property (nonatomic, assign)float additionalNum;//加数
+@property (nonatomic, readonly)float factorNum;//乘数
 
-@property (nonatomic, assign)float relationNum;//相关系数
+@property (nonatomic, readonly)float additionalNum;//加数
+
+@property (nonatomic, readonly)float relationNum;//相关系数
 
 @end

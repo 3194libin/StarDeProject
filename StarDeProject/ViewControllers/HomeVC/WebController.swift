@@ -11,7 +11,7 @@
 import UIKit
 
 class WebController: STBaseController {
-    public var stUrl:String?
+    internal var stUrl:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()

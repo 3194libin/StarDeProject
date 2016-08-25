@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface FitModel : NSObject
-@property (nonatomic,strong)NSArray *xArray;
+- (instancetype)initWithXArray:(NSArray *)xArray yArray:(NSArray *)yArray;
 
-@property (nonatomic,strong)NSArray *yArray;
+@property (nonatomic,readonly)NSArray *xArray;
+
+@property (nonatomic,readonly)NSArray *yArray;
 
 @end

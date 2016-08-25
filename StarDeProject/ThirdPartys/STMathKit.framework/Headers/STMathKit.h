@@ -7,9 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#import "FitModel.h"
-#import "FitResultModel.h"
 #import "FittingTool.h"
 //! Project version number for STMathKit.
 FOUNDATION_EXPORT double STMathKitVersionNumber;

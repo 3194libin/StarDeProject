@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/FitModel.h</key>
 		<data>
-		HMDokhzLsxCsdKcUDJnUCGmW/Mk=
+		XWujixp7RBlfInJ84LLEOiN9R+c=
 		</data>
 		<key>Headers/FitResultModel.h</key>
 		<data>
-		Br/xTC9HYfF/r1YPfOXu0PTut9A=
+		b+oTDzV52pvSD8llz2VKlYv0V8I=
 		</data>
 		<key>Headers/FittingTool.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/STMathKit.h</key>
 		<data>
-		f4sZMjO7lPpp6Mrz03xVSWA3bQA=
+		ipQW6Zo1OLB1Y+EqknShZ7iiy/s=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		N4D0GuN/qAg3k3XEIx0zzTLSn7g=
+		35T0eJb+vuQhQ8ihkfSa0yKSvTs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,22 +35,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HMDokhzLsxCsdKcUDJnUCGmW/Mk=
+			XWujixp7RBlfInJ84LLEOiN9R+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			TNfxjfSsw88kKsk5C40+vFxMTQKPYCROko4bwcJjRoQ=
+			DajOYip6nnrUHyTTms5Ek/surFcAZzRSWSABYHssSnE=
 			</data>
 		</dict>
 		<key>Headers/FitResultModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Br/xTC9HYfF/r1YPfOXu0PTut9A=
+			b+oTDzV52pvSD8llz2VKlYv0V8I=
 			</data>
 			<key>hash2</key>
 			<data>
-			e/E2y7nMVJf6+HoUbeZSah5fIPHCP1cRhn9sqvAtF4o=
+			mysG0oJWui6E1kqGddlG+xe0uLK5fmFx1ImhVb5hbIs=
 			</data>
 		</dict>
 		<key>Headers/FittingTool.h</key>
@@ -68,11 +68,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f4sZMjO7lPpp6Mrz03xVSWA3bQA=
+			ipQW6Zo1OLB1Y+EqknShZ7iiy/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qr6W8Jecn4KwEFhFkHEM+IiA5kt2ouZlZzZkmcfifXQ=
+			EOLv2uptDo0uCIM74uY0i3I3eqCOtSStIzN6lfKpM74=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
