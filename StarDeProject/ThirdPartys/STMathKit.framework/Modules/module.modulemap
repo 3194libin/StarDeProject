@@ -1,0 +1,6 @@
+framework module STMathKit {
+  umbrella header "STMathKit.h"
+
+  export *
+  module * { export * }
+}

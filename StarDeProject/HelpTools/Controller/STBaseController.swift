@@ -19,7 +19,7 @@ class STBaseController: UIViewController {
     //将被子类调用的方法
     func setNavigation(title:String,hasBackBtn:Bool){
         let headerView = UIView.init(frame: CGRectMake(0, 0, SCREEN_WIDTH, 64))
-        headerView.backgroundColor = RGBColor(56, g: 156, b: 213)
+        headerView.backgroundColor = RGBColor(245, g: 80, b: 83)
         self.view.addSubview(headerView)
         
         let titleLabel = UILabel.init(frame: CGRectMake(100, 20, SCREEN_WIDTH-200, 44))
