@@ -101,8 +101,7 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
         print("您选中了第\(indexPath.row)行")
         let webVC = WebController()
         webVC.stUrl = nextUrls![indexPath.row]
-        self.nav
-        igationController?.pushViewController(webVC, animated: true)
+        self.navigationController?.pushViewController(webVC, animated: true)
     }
     
     func setNextUrls(){
