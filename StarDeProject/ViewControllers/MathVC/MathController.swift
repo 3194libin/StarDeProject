@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import STMathKit
+
 class MathController: STBaseController,UITableViewDelegate,UITableViewDataSource {
 
     var  textArray:[String]?
@@ -17,12 +17,6 @@ class MathController: STBaseController,UITableViewDelegate,UITableViewDataSource
         self.view.backgroundColor = UIColor.yellowColor()
         setNavigation("数学", hasBackBtn: false)
         
-        //运用自己建立的框架
-        let xArray = ["0","1","2","3","4","5","6","7","8","9","10"]
-        let yArray = ["109050","111088","113144","115118","116632","118411","119155","120987","122825","123474","124181"]
-        let fitModel = FitModel.init(XArray: xArray, yArray: yArray)
-        let fitResult = FittingTool.fitWithFitModel(fitModel)
-        print("拟合结果为:\ny=\(fitResult.factorNum)x+\(fitResult.additionalNum) ,相关系数为:\(fitResult.relationNum)")
         //线性拟合，计算器，神经网络，深度学习,VR
         textArray = ["线性拟合","计算器","神经网络","深度学习","VR"]
         
@@ -59,7 +53,24 @@ class MathController: STBaseController,UITableViewDelegate,UITableViewDataSource
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("您选中了第\(indexPath.row)行")
-       
+        switch indexPath.row {
+        case 0:
+            let linearFitVC = LinearFitController()
+            self.navigationController?.pushViewController(linearFitVC, animated: true)
+            break
+        case 1:
+            let calculate = CalculatorViewController()
+            self.navigationController?.pushViewController(calculate, animated: true)
+            break
+        case 2:
+            break
+        case 3:
+            break
+        case 4:
+            break
+        default:
+            break
+        }
     }
     
     

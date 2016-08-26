@@ -10,6 +10,12 @@
 		251AD5A2CE6AB6D86ECDB8E3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06ED9675446CE89DC51A5CF /* Pods.framework */; };
 		810E9D251D66106B0064E6A7 /* STBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E9D241D66106B0064E6A7 /* STBaseController.swift */; };
 		81B5D5081D68DA61006D5834 /* StringHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5D5071D68DA61006D5834 /* StringHandle.swift */; };
+		81E88C6D1D709C350022A71C /* LinearFitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E88C6C1D709C350022A71C /* LinearFitController.swift */; };
+		81E88C721D709FBC0022A71C /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E88C701D709FBC0022A71C /* CalculatorViewController.m */; };
+		81E88C731D709FBC0022A71C /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E88C711D709FBC0022A71C /* CalculatorViewController.xib */; };
+		81E88C751D70A0420022A71C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E88C741D70A0420022A71C /* icon.png */; };
+		81E88C771D70A0650022A71C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E88C761D70A0650022A71C /* Foundation.framework */; };
+		81E88C791D70A06D0022A71C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E88C781D70A06D0022A71C /* CoreGraphics.framework */; };
 		F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */; };
 		F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B341D5C223B00F5A8E7 /* STMacro.swift */; };
 		F87B8B381D5C454000F5A8E7 /* HomeTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */; };
@@ -64,6 +70,14 @@
 		31358786458889026D365BF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		810E9D241D66106B0064E6A7 /* STBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STBaseController.swift; sourceTree = "<group>"; };
 		81B5D5071D68DA61006D5834 /* StringHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHandle.swift; sourceTree = "<group>"; };
+		81E88C6C1D709C350022A71C /* LinearFitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearFitController.swift; sourceTree = "<group>"; };
+		81E88C6E1D709FBC0022A71C /* StarDeProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarDeProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		81E88C6F1D709FBC0022A71C /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		81E88C701D709FBC0022A71C /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		81E88C711D709FBC0022A71C /* CalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
+		81E88C741D70A0420022A71C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		81E88C761D70A0650022A71C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		81E88C781D70A06D0022A71C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		98FF82BBACFD6E770CF90419 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E06ED9675446CE89DC51A5CF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNavigationController.swift; sourceTree = "<group>"; };
@@ -94,6 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E88C791D70A06D0022A71C /* CoreGraphics.framework in Frameworks */,
+				81E88C771D70A0650022A71C /* Foundation.framework in Frameworks */,
 				F8CCB2371D6F569500B7D7D3 /* STMathKit.framework in Frameworks */,
 				F8CCB2381D6F569D00B7D7D3 /* STMathKit.framework in Frameworks */,
 				251AD5A2CE6AB6D86ECDB8E3 /* Pods.framework in Frameworks */,
@@ -125,9 +141,30 @@
 			path = StringHandle;
 			sourceTree = "<group>";
 		};
+		81E88C6A1D709BEC0022A71C /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				81E88C6F1D709FBC0022A71C /* CalculatorViewController.h */,
+				81E88C701D709FBC0022A71C /* CalculatorViewController.m */,
+				81E88C711D709FBC0022A71C /* CalculatorViewController.xib */,
+				81E88C6E1D709FBC0022A71C /* StarDeProject-Bridging-Header.h */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		81E88C6B1D709BEC0022A71C /* LinearFit */ = {
+			isa = PBXGroup;
+			children = (
+				81E88C6C1D709C350022A71C /* LinearFitController.swift */,
+			);
+			path = LinearFit;
+			sourceTree = "<group>";
+		};
 		88301A2384EC0D0319459DB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81E88C781D70A06D0022A71C /* CoreGraphics.framework */,
+				81E88C761D70A0650022A71C /* Foundation.framework */,
 				E06ED9675446CE89DC51A5CF /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -163,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				F87B8B3A1D5C45EA00F5A8E7 /* MathController.swift */,
+				81E88C6A1D709BEC0022A71C /* Calculator */,
+				81E88C6B1D709BEC0022A71C /* LinearFit */,
 			);
 			path = MathVC;
 			sourceTree = "<group>";
@@ -231,6 +270,7 @@
 		F88106551D59B5DB008A0EA3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				81E88C741D70A0420022A71C /* icon.png */,
 				F88106231D596E31008A0EA3 /* AppDelegate.swift */,
 				F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */,
 				F88106271D596E31008A0EA3 /* Main.storyboard */,
@@ -387,7 +427,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F88106311D596E31008A0EA3 /* LaunchScreen.storyboard in Resources */,
+				81E88C751D70A0420022A71C /* icon.png in Resources */,
 				F881062E1D596E31008A0EA3 /* Assets.xcassets in Resources */,
+				81E88C731D709FBC0022A71C /* CalculatorViewController.xib in Resources */,
 				F88106291D596E31008A0EA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E88C721D709FBC0022A71C /* CalculatorViewController.m in Sources */,
 				81B5D5081D68DA61006D5834 /* StringHandle.swift in Sources */,
 				F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */,
 				F88106241D596E31008A0EA3 /* AppDelegate.swift in Sources */,
@@ -471,6 +514,7 @@
 				F87B8B3B1D5C45EA00F5A8E7 /* MathController.swift in Sources */,
 				F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */,
 				F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */,
+				81E88C6D1D709C350022A71C /* LinearFitController.swift in Sources */,
 				810E9D251D66106B0064E6A7 /* STBaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,6 +663,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -628,9 +673,11 @@
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongxunchao.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -640,6 +687,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -649,9 +697,10 @@
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongxunchao.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";
 			};
 			name = Release;
 		};
