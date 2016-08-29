@@ -18,7 +18,7 @@ class MathController: STBaseController,UITableViewDelegate,UITableViewDataSource
         setNavigation("数学", hasBackBtn: false)
         
         //线性拟合，计算器，神经网络，深度学习,VR
-        textArray = ["线性拟合","计算器","神经网络","深度学习","VR"]
+        textArray = ["线性拟合","计算器","我的计算器","神经网络","深度学习","VR"]
         
         let tableView = UITableView.init(frame: CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64-44), style: UITableViewStyle.Plain)
         tableView.dataSource = self
