@@ -20,7 +20,7 @@ class STCalculateController: STBaseController {
     }
     
     func setMyView(){
-        var calculateView = MyCalculateView.init(frame: CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64))
+        let calculateView = MyCalculateView.init(frame: CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64))
         calculateView.operationArray = ["C","<-","÷","×",
                                         "7","8","9","－",
                                         "4","5","6","＋",

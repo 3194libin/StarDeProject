@@ -24,7 +24,6 @@ class WebController: STBaseController {
         self.view.addSubview(webView)
         let newUrltext:String = stUrl!
         let url = NSURL(string: newUrltext)
-        let baiduUrl = NSURL(string: "http://www.quanjing.com/search.aspx?q=%E8%BF%90%E5%8A%A8||1|60|1|2||||")
         
         let request = NSURLRequest(URL: url!)
         webView.loadRequest(request)
