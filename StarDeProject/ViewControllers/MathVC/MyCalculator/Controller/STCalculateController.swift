@@ -14,7 +14,19 @@ class STCalculateController: STBaseController {
         super.viewDidLoad()
         setNavigation("我的计算器", hasBackBtn: true)
         self.view.backgroundColor = UIColor.lightGrayColor()
+        
+        setMyView()
         // Do any additional setup after loading the view.
+    }
+    
+    func setMyView(){
+        var calculateView = MyCalculateView.init(frame: CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64))
+        calculateView.operationArray = ["C","<-","÷","×",
+                                        "7","8","9","－",
+                                        "4","5","6","＋",
+                                        "1","2","3","＝",
+                                        "()","0","."]
+        self.view.addSubview(calculateView)
     }
 
     override func didReceiveMemoryWarning() {

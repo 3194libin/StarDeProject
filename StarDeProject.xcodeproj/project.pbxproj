@@ -18,6 +18,7 @@
 		81E88C751D70A0420022A71C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E88C741D70A0420022A71C /* icon.png */; };
 		81E88C771D70A0650022A71C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E88C761D70A0650022A71C /* Foundation.framework */; };
 		81E88C791D70A06D0022A71C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E88C781D70A06D0022A71C /* CoreGraphics.framework */; };
+		F862C8AB1D751B060032D2B9 /* CalculateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F862C8AA1D751B060032D2B9 /* CalculateLayout.swift */; };
 		F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */; };
 		F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B341D5C223B00F5A8E7 /* STMacro.swift */; };
 		F87B8B381D5C454000F5A8E7 /* HomeTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */; };
@@ -84,6 +85,7 @@
 		81E88C781D70A06D0022A71C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		98FF82BBACFD6E770CF90419 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E06ED9675446CE89DC51A5CF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F862C8AA1D751B060032D2B9 /* CalculateLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateLayout.swift; sourceTree = "<group>"; };
 		F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNavigationController.swift; sourceTree = "<group>"; };
 		F87B8B341D5C223B00F5A8E7 /* STMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMacro.swift; sourceTree = "<group>"; };
 		F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabbarController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				81E67E2F1D749C8C0003D065 /* MyCalculateView.swift */,
+				F862C8AA1D751B060032D2B9 /* CalculateLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				F87B8B3B1D5C45EA00F5A8E7 /* MathController.swift in Sources */,
 				F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */,
 				F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */,
+				F862C8AB1D751B060032D2B9 /* CalculateLayout.swift in Sources */,
 				81E67E301D749C8C0003D065 /* MyCalculateView.swift in Sources */,
 				81E88C6D1D709C350022A71C /* LinearFitController.swift in Sources */,
 				810E9D251D66106B0064E6A7 /* STBaseController.swift in Sources */,
@@ -713,7 +717,7 @@
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhongxunchao.StarDeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";
@@ -737,7 +741,7 @@
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhongxunchao.StarDeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";

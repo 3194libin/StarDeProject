@@ -63,6 +63,8 @@ class MathController: STBaseController,UITableViewDelegate,UITableViewDataSource
             self.navigationController?.pushViewController(calculate, animated: true)
             break
         case 2:
+            let myCalculate = STCalculateController()
+            self.navigationController?.pushViewController(myCalculate, animated: true)
             break
         case 3:
             break
