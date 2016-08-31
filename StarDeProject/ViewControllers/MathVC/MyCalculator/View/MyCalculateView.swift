@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class MyCalculateView: UIView ,UICollectionViewDataSource{
+import AVFoundation
+class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelegate{
 
     var processLabel:UILabel?
     var resultLabel:UILabel?
@@ -65,6 +65,7 @@ class MyCalculateView: UIView ,UICollectionViewDataSource{
         let operationCollectionView = UICollectionView.init(frame: CGRectMake(0, SCREEN_HEIGHT-64-SCREEN_WIDTH*5/4+20, SCREEN_WIDTH, SCREEN_WIDTH*5/4-20), collectionViewLayout: calculateLayout)
         operationCollectionView.registerClass(UICollectionViewCell.classForCoder(), forCellWithReuseIdentifier: "cellId")
         operationCollectionView.dataSource = self
+        operationCollectionView.delegate = self
         operationCollectionView.backgroundColor = UIColor.lightGrayColor()
         addSubview(operationCollectionView)
     }
@@ -92,5 +93,9 @@ class MyCalculateView: UIView ,UICollectionViewDataSource{
 //        }
         cell.backgroundColor = UIColor.grayColor()
         return cell
+    }
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        //播放音效 http://www.cocoachina.com/bbs/read.php?tid=134344
+        AudioServicesPlaySystemSound(1200)
     }
 }

@@ -32,9 +32,10 @@ class CalculateTool: NSObject {
     {
         optrStack?.append(optr)
     }
-    //弹出一个运算数,返回弹出数
+    //弹出一个运算数,返回弹出数:小数点怎么解决
     func popOperand() -> Float
     {
-        
+        //let last = <#value#>
+        return 0.0
     }
 }
