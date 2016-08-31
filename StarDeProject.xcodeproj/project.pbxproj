@@ -32,9 +32,12 @@
 		F88106471D596E31008A0EA3 /* StarDeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106461D596E31008A0EA3 /* StarDeProjectUITests.swift */; };
 		F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106591D59B79D008A0EA3 /* HomeViewController.swift */; };
 		F8ADC10D1D6D7056003B5D42 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADC10C1D6D7056003B5D42 /* WebController.swift */; };
+		F8B42F3A1D76C62000FB9415 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F391D76C62000FB9415 /* STMathKit.framework */; };
+		F8B42F401D76CB9800FB9415 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */; };
+		F8B42F411D76CBB200FB9415 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */; };
+		F8B42F421D76CBB200FB9415 /* STMathKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8B42F451D76CF9300FB9415 /* CalculateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B42F441D76CF9300FB9415 /* CalculateTool.swift */; };
 		F8CCB2371D6F569500B7D7D3 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */; };
-		F8CCB2381D6F569D00B7D7D3 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */; };
-		F8CCB2391D6F569D00B7D7D3 /* STMathKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F8CCB2391D6F569D00B7D7D3 /* STMathKit.framework in Embed Frameworks */,
+				F8B42F421D76CBB200FB9415 /* STMathKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +108,10 @@
 		F88106481D596E31008A0EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88106591D59B79D008A0EA3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F8ADC10C1D6D7056003B5D42 /* WebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
-		F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STMathKit.framework; sourceTree = "<group>"; };
+		F8B42F391D76C62000FB9415 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STMathKit.framework; path = /Users/star/Desktop/StarDeProject/StarDeProject/ThirdPartys/STMathKit.framework; sourceTree = "<absolute>"; };
+		F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STMathKit.framework; sourceTree = "<group>"; };
+		F8B42F441D76CF9300FB9415 /* CalculateTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateTool.swift; sourceTree = "<group>"; };
+		F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STMathKit.framework; path = /Users/star/Desktop/StarDeProject/StarDeProject/ThirdPartys/STMathKit.framework; sourceTree = "<absolute>"; };
 		F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,9 +121,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E88C791D70A06D0022A71C /* CoreGraphics.framework in Frameworks */,
+				F8B42F3A1D76C62000FB9415 /* STMathKit.framework in Frameworks */,
 				81E88C771D70A0650022A71C /* Foundation.framework in Frameworks */,
 				F8CCB2371D6F569500B7D7D3 /* STMathKit.framework in Frameworks */,
-				F8CCB2381D6F569D00B7D7D3 /* STMathKit.framework in Frameworks */,
+				F8B42F411D76CBB200FB9415 /* STMathKit.framework in Frameworks */,
+				F8B42F401D76CB9800FB9415 /* STMathKit.framework in Frameworks */,
 				251AD5A2CE6AB6D86ECDB8E3 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +309,7 @@
 		F88106541D59B5DB008A0EA3 /* HelpTools */ = {
 			isa = PBXGroup;
 			children = (
+				F8B42F431D76CF7500FB9415 /* CalculateTool */,
 				81B5D5061D68DA49006D5834 /* StringHandle */,
 				F87B8B331D5C14BF00F5A8E7 /* Macro */,
 				F87B8B301D5C11E900F5A8E7 /* Controller */,
@@ -326,7 +335,7 @@
 		F88106561D59B5DB008A0EA3 /* ThirdPartys */ = {
 			isa = PBXGroup;
 			children = (
-				F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */,
+				F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */,
 			);
 			path = ThirdPartys;
 			sourceTree = "<group>";
@@ -348,6 +357,14 @@
 				F8ADC10C1D6D7056003B5D42 /* WebController.swift */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		F8B42F431D76CF7500FB9415 /* CalculateTool */ = {
+			isa = PBXGroup;
+			children = (
+				F8B42F441D76CF9300FB9415 /* CalculateTool.swift */,
+			);
+			path = CalculateTool;
 			sourceTree = "<group>";
 		};
 		F8D7930A1D6AD780006D2209 /* Extension */ = {
@@ -559,6 +576,7 @@
 				F862C8AB1D751B060032D2B9 /* CalculateLayout.swift in Sources */,
 				81E67E301D749C8C0003D065 /* MyCalculateView.swift in Sources */,
 				81E88C6D1D709C350022A71C /* LinearFitController.swift in Sources */,
+				F8B42F451D76CF9300FB9415 /* CalculateTool.swift in Sources */,
 				810E9D251D66106B0064E6A7 /* STBaseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
