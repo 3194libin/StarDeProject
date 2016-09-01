@@ -13,12 +13,14 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
     var processLabel:UILabel?
     var resultLabel:UILabel?
     internal var operationArray:[String]?
+    var formulaString:String?
     
     //进行响应式编程可以吗？当属性改变的时候直接在UI上呈现
     
     override init(frame: CGRect) {
         super.init(frame:frame)
         self.backgroundColor = UIColor.lightGrayColor()
+        formulaString = ""
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,7 +43,7 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
             make.left.equalToSuperview().offset(20)
         })
         processLabel?.textColor = UIColor.whiteColor()
-        processLabel?.text = "0×0"
+        processLabel?.text = "0"
         processLabel?.font = UIFont.systemFontOfSize(18)
         processLabel?.textAlignment = NSTextAlignment.Right
         
@@ -87,6 +89,7 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
         operationLabel.font = UIFont.systemFontOfSize(30)
         operationLabel.bounds = CGRectMake(0, 0, 60, 60)
         operationLabel.center = cell.contentView.center
+        operationLabel.tag = 1234
 //        operationLabel.snp_makeConstraints { (make) in
 //            make.size.equalTo(CGSizeMake(60, 60))
 //            make.center.equalToSuperview().offset(CGPointMake(SCREEN_WIDTH/8, SCREEN_WIDTH/8))
@@ -97,5 +100,29 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         //播放音效 http://www.cocoachina.com/bbs/read.php?tid=134344
         AudioServicesPlaySystemSound(1200)
+        
+        //更新上面的Label,获取cell label内的文字
+        let collectionCell = collectionView.cellForItemAtIndexPath(indexPath)
+        let oprationLabel = collectionCell?.contentView.viewWithTag(1234) as! UILabel
+        print("当前点击的符号为\(oprationLabel.text),第\(indexPath.row)个单元格")
+        if indexPath.row == 0//C
+        {
+            formulaString = "0"
+        }
+        else if indexPath.row == 1//<-
+        {
+            let length = formulaString!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+            if length > 0 {
+                formulaString = formulaString?.substringToIndex(formulaString?.endIndex-1)
+            }
+        }
+        else if indexPath.row == 15//=
+        {
+            
+        }
+        else
+        {
+            
+        }
     }
 }
