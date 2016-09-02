@@ -107,22 +107,29 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
         print("当前点击的符号为\(oprationLabel.text),第\(indexPath.row)个单元格")
         if indexPath.row == 0//C
         {
-            formulaString = "0"
+            formulaString = ""
+            processLabel?.text = "0"
         }
         else if indexPath.row == 1//<-
         {
             let length = formulaString!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
-            if length > 0 {
-                formulaString = formulaString?.substringToIndex(formulaString?.endIndex-1)
+            if length > 0//去除最后一个字符
+            {
+                let lastIndex = formulaString?.endIndex.advancedBy(-1)
+                formulaString = formulaString?.substringToIndex(lastIndex!)
             }
+             processLabel?.text = formulaString
         }
-        else if indexPath.row == 15//=
+        else if indexPath.row == 15//=,点击＝需要将运算式归0,并且判断计算的有效性
         {
-            
+            formulaString = formulaString?.stringByAppendingString("=")
+            processLabel?.text = formulaString
+            formulaString = ""
         }
-        else
+        else//其他数字和运算符
         {
-            
+            formulaString = formulaString?.stringByAppendingString(oprationLabel.text!)
+            processLabel?.text = formulaString
         }
     }
 }
