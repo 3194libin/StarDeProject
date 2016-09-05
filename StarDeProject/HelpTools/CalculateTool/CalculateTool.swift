@@ -102,7 +102,7 @@ class CalculateTool: NSObject {
         }
     }
     
-    //判断运算符的优先级:1表示大于，0表示等于，－1表示小于
+    //判断运算符的优先级:1表示大于，0表示等于，－1表示小于,有没有改进的办法？
     func precede(s:String,c:String) -> Int
     {
         switch s {
@@ -113,10 +113,93 @@ class CalculateTool: NSObject {
             {
                 return 1
             }
-            else if 
-            break
+            else if c=="×" || c=="÷"
+            {
+                return -1
+            }
+            else if c=="("
+            {
+                return -1
+            }
+            else if c==")"
+            {
+                return 1
+            }
+            else
+            {
+                return 1
+            }
+        case "×":
+            fallthrough
+        case "÷"://这里为什么和加减法不一致
+            if c=="+"||c=="-"
+            {
+                return 1
+            }
+            else if c=="×" || c=="÷"
+            {
+                return 1
+            }
+            else if c=="("
+            {
+                return -1
+            }
+            else if c==")"
+            {
+                return 1
+            }
+            else
+            {
+                return 1
+            }
+        case "(":
+            if c==")"
+            {
+                return 0
+            }
+            else
+            {
+                return -1
+            }
+        case ")":
+            return 1
+        case "=":
+            if c=="="
+            {
+                return 0
+            }
+            else
+            {
+                return -1
+            }
         default:
-            <#code#>
+            return -2
         }
     }
+    
+    //进行单独的运算
+    func operate(x:Float,opr:String,y:Float) -> Float
+    {
+        var result:Float?
+        switch opr
+        {
+        case "+":
+            result = x+y
+            break
+        case "-":
+            result = x-y
+            break
+        case "×":
+            result = x*y
+            break
+        case "÷":
+            result = x/y
+            break
+        default:
+            result = 0
+            break
+        }
+        return result!
+    }
+    //已完成各项准备工作
 }
