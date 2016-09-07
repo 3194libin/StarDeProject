@@ -30,7 +30,6 @@
 		F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F881062A1D596E31008A0EA3 /* StarDeProject.xcdatamodeld */; };
 		F881062E1D596E31008A0EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F881062D1D596E31008A0EA3 /* Assets.xcassets */; };
 		F88106311D596E31008A0EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F881062F1D596E31008A0EA3 /* LaunchScreen.storyboard */; };
-		F881063C1D596E31008A0EA3 /* StarDeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881063B1D596E31008A0EA3 /* StarDeProjectTests.swift */; };
 		F88106471D596E31008A0EA3 /* StarDeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106461D596E31008A0EA3 /* StarDeProjectUITests.swift */; };
 		F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106591D59B79D008A0EA3 /* HomeViewController.swift */; };
 		F8ADC10D1D6D7056003B5D42 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADC10C1D6D7056003B5D42 /* WebController.swift */; };
@@ -39,6 +38,8 @@
 		F8B42F411D76CBB200FB9415 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */; };
 		F8B42F421D76CBB200FB9415 /* STMathKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8B42F451D76CF9300FB9415 /* CalculateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B42F441D76CF9300FB9415 /* CalculateTool.swift */; };
+		F8B439081D7FBDF8008B5518 /* StarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B439071D7FBDF8008B5518 /* StarTest.swift */; };
+		F8B4390A1D7FBF8D008B5518 /* StarDeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B439091D7FBF8D008B5518 /* StarDeProjectTests.swift */; };
 		F8CCB2371D6F569500B7D7D3 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */; };
 		F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */; };
 /* End PBXBuildFile section */
@@ -105,7 +106,6 @@
 		F88106301D596E31008A0EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F88106321D596E31008A0EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F88106371D596E31008A0EA3 /* StarDeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarDeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F881063B1D596E31008A0EA3 /* StarDeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDeProjectTests.swift; sourceTree = "<group>"; };
 		F881063D1D596E31008A0EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88106421D596E31008A0EA3 /* StarDeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarDeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88106461D596E31008A0EA3 /* StarDeProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDeProjectUITests.swift; sourceTree = "<group>"; };
@@ -115,6 +115,8 @@
 		F8B42F391D76C62000FB9415 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STMathKit.framework; path = /Users/star/Desktop/StarDeProject/StarDeProject/ThirdPartys/STMathKit.framework; sourceTree = "<absolute>"; };
 		F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STMathKit.framework; sourceTree = "<group>"; };
 		F8B42F441D76CF9300FB9415 /* CalculateTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateTool.swift; sourceTree = "<group>"; };
+		F8B439071D7FBDF8008B5518 /* StarTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTest.swift; sourceTree = "<group>"; };
+		F8B439091D7FBF8D008B5518 /* StarDeProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarDeProjectTests.swift; sourceTree = "<group>"; };
 		F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STMathKit.framework; path = /Users/star/Desktop/StarDeProject/StarDeProject/ThirdPartys/STMathKit.framework; sourceTree = "<absolute>"; };
 		F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -297,8 +299,9 @@
 		F881063A1D596E31008A0EA3 /* StarDeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				F881063B1D596E31008A0EA3 /* StarDeProjectTests.swift */,
+				F8B439091D7FBF8D008B5518 /* StarDeProjectTests.swift */,
 				F881063D1D596E31008A0EA3 /* Info.plist */,
+				F8B439071D7FBDF8008B5518 /* StarTest.swift */,
 			);
 			path = StarDeProjectTests;
 			sourceTree = "<group>";
@@ -593,7 +596,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F881063C1D596E31008A0EA3 /* StarDeProjectTests.swift in Sources */,
+				F8B4390A1D7FBF8D008B5518 /* StarDeProjectTests.swift in Sources */,
+				F8B439081D7FBDF8008B5518 /* StarTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,7 +747,7 @@
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhongxunchao.StarDeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";
@@ -768,7 +772,7 @@
 				INFOPLIST_FILE = StarDeProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhongxunchao.StarDeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";
@@ -780,10 +784,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = StarDeProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DX.StarDeProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarDeProject.app/StarDeProject";
 			};
 			name = Debug;
@@ -792,10 +800,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = StarDeProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DX.StarDeProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarDeProject.app/StarDeProject";
 			};
 			name = Release;

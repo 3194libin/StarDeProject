@@ -14,13 +14,16 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
     var resultLabel:UILabel?
     internal var operationArray:[String]?
     var formulaString:String?
+    var hasLeftBracket:Bool?
     
+
     //进行响应式编程可以吗？当属性改变的时候直接在UI上呈现
     
     override init(frame: CGRect) {
         super.init(frame:frame)
         self.backgroundColor = UIColor.lightGrayColor()
         formulaString = ""
+        hasLeftBracket = false
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -55,7 +58,7 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
             make.left.equalToSuperview().offset(20)
         })
         resultLabel?.textColor = UIColor.whiteColor()
-        resultLabel?.text = "5216661111"
+        resultLabel?.text = "0"
         resultLabel?.font = UIFont.systemFontOfSize(40)
         resultLabel?.textAlignment = NSTextAlignment.Right
     }
@@ -109,6 +112,7 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
         {
             formulaString = ""
             processLabel?.text = "0"
+            resultLabel?.text = "0"
         }
         else if indexPath.row == 1//<-
         {
@@ -124,7 +128,25 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
         {
             formulaString = formulaString?.stringByAppendingString("=")
             processLabel?.text = formulaString
+            //得到计算结果
+            let calculate = CalculateResult()
+            let result = calculate.calculateWithString(formulaString!)
+            resultLabel?.text = String(result)
             formulaString = ""
+            hasLeftBracket = false
+        }
+        else if indexPath.row == 16//()
+        {
+            if hasLeftBracket!
+            {
+                formulaString = formulaString?.stringByAppendingString(")")
+            }
+            else
+            {
+                formulaString = formulaString?.stringByAppendingString("(")
+            }
+            processLabel?.text = formulaString
+            hasLeftBracket = !hasLeftBracket!
         }
         else//其他数字和运算符
         {

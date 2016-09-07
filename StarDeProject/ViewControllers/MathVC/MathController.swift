@@ -67,6 +67,10 @@ class MathController: STBaseController,UITableViewDelegate,UITableViewDataSource
             self.navigationController?.pushViewController(myCalculate, animated: true)
             break
         case 3:
+            let calculateString  = "1+(2+3546)×54="
+            let calculate = CalculateResult()
+            let result = calculate.calculateWithString(calculateString)
+            print("计算结果为\(result)")
             break
         case 4:
             break
@@ -80,8 +84,6 @@ class MathController: STBaseController,UITableViewDelegate,UITableViewDataSource
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
     /*
     // MARK: - Navigation
 
