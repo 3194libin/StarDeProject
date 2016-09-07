@@ -152,7 +152,14 @@ class CalculateTool: NSObject {
             result = x*y
             break
         case "÷":
-            result = x/y
+            if y != 0
+            {
+                result = x/y
+            }
+            else
+            {
+                return PI
+            }
             break
         default:
             result = 0

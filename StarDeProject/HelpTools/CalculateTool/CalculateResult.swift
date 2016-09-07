@@ -17,6 +17,7 @@ class CalculateResult: NSObject {
         calculateTool.initOptrStack()
         calculateTool.initOpndStack()
     }
+    //如何排除异常的表达式，包括小数点，除以0，其他格式
     func calculateWithString(s:String) -> Float
     {
         var calculateString = stringToArray(s)
@@ -24,7 +25,7 @@ class CalculateResult: NSObject {
         while calculateString.count>0
         {
             let firstElement = calculateString.first
-            if Int(firstElement!)==nil//如果是运算符,则比较优先级
+            if Float(firstElement!)==nil//如果是运算符,则比较优先级
             {
                 let topOptr = calculateTool.getTopOperator()
                 //如果栈内运算符优先级较低,则运算符入栈
@@ -52,8 +53,12 @@ class CalculateResult: NSObject {
                     continue
                 }
             }
-            else//如果运算数则直接入栈
+            else//如果运算数则直接入栈，如果有两个小数点需要报错
             {
+                if firstElement!.componentsSeparatedByString(".").count>2
+                {
+                    return PI
+                }
                 calculateTool.pushOperand(firstElement!)
                 calculateString.removeAtIndex(0)
                 continue
@@ -91,7 +96,7 @@ class CalculateResult: NSObject {
                 {
                     let character = mutableStr.substringWithRange(Range(start:mutableStr.startIndex.advancedBy(i),end:mutableStr.startIndex.advancedBy(i+1)))
                     print("该字符的整数值为\(Int(character))")
-                    if Int(character)==nil
+                    if Int(character)==nil && character != "."
                     {
                         let numberStr = mutableStr.substringToIndex(mutableStr.startIndex.advancedBy(i))
                         stringArray.append(numberStr)

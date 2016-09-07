@@ -17,6 +17,8 @@ import SnapKit
 let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.height
 
+let PI:Float = 3.141592653589793238462643383279
+
 func RGBColor(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor {
     return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: 1)
 }
