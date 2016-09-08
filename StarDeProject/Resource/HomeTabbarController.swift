@@ -36,7 +36,12 @@ class HomeTabbarController: UITabBarController {
         extensionVC.tabBarItem.image = UIImage(named: "TabBar_category_23x23_")
         extensionVC.tabBarItem.selectedImage = UIImage(named: "TabBar_category_23x23_selected")
         
-        self.viewControllers = [homeVC,mathVC,extensionVC]
+        let uiVC = UIController() 
+        uiVC.tabBarItem.title = "UI"
+        uiVC.tabBarItem.image = UIImage(named: "TabBar_me_girl_23x23_")
+        uiVC.tabBarItem.selectedImage = UIImage(named: "TabBar_me_girl_23x23_selected")
+        
+        self.viewControllers = [homeVC,mathVC,uiVC,extensionVC]
     }
     
     override func didReceiveMemoryWarning() {

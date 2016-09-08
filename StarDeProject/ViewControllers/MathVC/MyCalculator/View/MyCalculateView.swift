@@ -18,7 +18,6 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
     
 
     //进行响应式编程可以吗？当属性改变的时候直接在UI上呈现
-    
     override init(frame: CGRect) {
         super.init(frame:frame)
         self.backgroundColor = UIColor.lightGrayColor()
@@ -131,7 +130,15 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
             //得到计算结果
             let calculate = CalculateResult()
             let result = calculate.calculateWithString(formulaString!)
-            resultLabel?.text = String(result)
+            if result==PI//error
+            {
+                let alert = UIAlertView.init(title: "警告", message: "表达式错误", delegate: nil, cancelButtonTitle: "确定")
+                alert.show()
+            }
+            else
+            {
+                resultLabel?.text = String(result)
+            }
             formulaString = ""
             hasLeftBracket = false
         }

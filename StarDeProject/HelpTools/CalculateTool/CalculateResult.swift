@@ -25,7 +25,11 @@ class CalculateResult: NSObject {
         while calculateString.count>0
         {
             let firstElement = calculateString.first
-            if Float(firstElement!)==nil//如果是运算符,则比较优先级
+            if firstElement?.componentsSeparatedByString(".").count>2
+            {
+                return PI
+            }
+            else if Float(firstElement!)==nil//如果是运算符,则比较优先级；多个小数点的情况
             {
                 let topOptr = calculateTool.getTopOperator()
                 //如果栈内运算符优先级较低,则运算符入栈
@@ -42,6 +46,13 @@ class CalculateResult: NSObject {
                     let secondNumber = calculateTool.popOperand()
                     let firstNumber = calculateTool.popOperand()
                     let tempResult = calculateTool.operate(firstNumber, opr: popOptr, y: secondNumber)
+                    if tempResult==PI//如果除以0
+                    {
+                        calculateTool.initOptrStack()
+                        calculateTool.initOpndStack()
+                        return PI
+                    }
+                    
                     calculateTool.pushOperand(String(tempResult))
                     continue
                 }
@@ -55,10 +66,6 @@ class CalculateResult: NSObject {
             }
             else//如果运算数则直接入栈，如果有两个小数点需要报错
             {
-                if firstElement!.componentsSeparatedByString(".").count>2
-                {
-                    return PI
-                }
                 calculateTool.pushOperand(firstElement!)
                 calculateString.removeAtIndex(0)
                 continue
@@ -78,6 +85,7 @@ class CalculateResult: NSObject {
         calculateTool.initOpndStack()
         return result
     }
+    
     
     //将输入的字符串输出为数组
     func stringToArray(s:String) -> Array<String>
