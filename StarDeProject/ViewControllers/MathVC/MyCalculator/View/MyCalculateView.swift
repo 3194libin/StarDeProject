@@ -137,7 +137,14 @@ class MyCalculateView: UIView ,UICollectionViewDataSource,UICollectionViewDelega
             }
             else
             {
+                if result-floor(result) < 0.000001
+                {
+                    resultLabel?.text = String(Int(result))
+                }
+                else
+                {
                 resultLabel?.text = String(result)
+                }
             }
             formulaString = ""
             hasLeftBracket = false
