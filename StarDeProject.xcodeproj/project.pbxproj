@@ -43,6 +43,8 @@
 		F8B4390A1D7FBF8D008B5518 /* StarDeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B439091D7FBF8D008B5518 /* StarDeProjectTests.swift */; };
 		F8CCB2371D6F569500B7D7D3 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */; };
 		F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */; };
+		F8E47ED31D8693E600850F8F /* InfiniteScrollPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E47ED01D8693E600850F8F /* InfiniteScrollPicker.m */; };
+		F8E47ED41D8693E600850F8F /* UIView+viewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E47ED21D8693E600850F8F /* UIView+viewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,10 @@
 		F8B439091D7FBF8D008B5518 /* StarDeProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarDeProjectTests.swift; sourceTree = "<group>"; };
 		F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STMathKit.framework; path = /Users/star/Desktop/StarDeProject/StarDeProject/ThirdPartys/STMathKit.framework; sourceTree = "<absolute>"; };
 		F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
+		F8E47ECF1D8693E600850F8F /* InfiniteScrollPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollPicker.h; sourceTree = "<group>"; };
+		F8E47ED01D8693E600850F8F /* InfiniteScrollPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollPicker.m; sourceTree = "<group>"; };
+		F8E47ED11D8693E600850F8F /* UIView+viewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+viewController.h"; sourceTree = "<group>"; };
+		F8E47ED21D8693E600850F8F /* UIView+viewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+viewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +326,7 @@
 		F88106541D59B5DB008A0EA3 /* HelpTools */ = {
 			isa = PBXGroup;
 			children = (
+				F8E47ECD1D8693E600850F8F /* HelpView */,
 				F8B42F431D76CF7500FB9415 /* CalculateTool */,
 				81B5D5061D68DA49006D5834 /* StringHandle */,
 				F87B8B331D5C14BF00F5A8E7 /* Macro */,
@@ -394,6 +401,25 @@
 				F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F8E47ECD1D8693E600850F8F /* HelpView */ = {
+			isa = PBXGroup;
+			children = (
+				F8E47ECE1D8693E600850F8F /* HorizontalScrollView */,
+			);
+			path = HelpView;
+			sourceTree = "<group>";
+		};
+		F8E47ECE1D8693E600850F8F /* HorizontalScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F8E47ECF1D8693E600850F8F /* InfiniteScrollPicker.h */,
+				F8E47ED01D8693E600850F8F /* InfiniteScrollPicker.m */,
+				F8E47ED11D8693E600850F8F /* UIView+viewController.h */,
+				F8E47ED21D8693E600850F8F /* UIView+viewController.m */,
+			);
+			path = HorizontalScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -594,8 +620,10 @@
 				F87B8B381D5C454000F5A8E7 /* HomeTabbarController.swift in Sources */,
 				F8ADC10D1D6D7056003B5D42 /* WebController.swift in Sources */,
 				F87B8B3B1D5C45EA00F5A8E7 /* MathController.swift in Sources */,
+				F8E47ED31D8693E600850F8F /* InfiniteScrollPicker.m in Sources */,
 				F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */,
 				F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */,
+				F8E47ED41D8693E600850F8F /* UIView+viewController.m in Sources */,
 				F862C8AB1D751B060032D2B9 /* CalculateLayout.swift in Sources */,
 				81E67E301D749C8C0003D065 /* MyCalculateView.swift in Sources */,
 				81E88C6D1D709C350022A71C /* LinearFitController.swift in Sources */,
