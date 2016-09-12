@@ -25,7 +25,7 @@ class ExtensionController: STBaseController,ScrollPickerDataSource,ScrollPickerD
         backImage.image = UIImage.init(imageLiteral: "beauti")
         self.view.addSubview(backImage)
         
-        functionArray = ["JS热修复","对角棋","功能二","功能三","功能四"]
+        functionArray = ["JS热修复","RSA加密证书","数据库安全","功能三","功能四"]
         let isp = InfiniteScrollPicker.init(frame: CGRectMake(0, 100, SCREEN_WIDTH, 300))
         isp.dataSource = self
         isp.tapDelegate = self
