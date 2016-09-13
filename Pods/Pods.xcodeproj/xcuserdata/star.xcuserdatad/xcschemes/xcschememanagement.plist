@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSPatch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3B626FAC297B3D99458DAB4A93EA71AE</key>
+		<key>4DE203D9A7B74D9C5249303305D8AD75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>576458DB1B487BBE290D9DBF811C490B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,7 +47,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A84249C2E3B205D4D36B8F32E5DB2211</key>
+		<key>B13574E17EED8AAA9A85CE67AD5B4570</key>
 		<dict>
 			<key>primary</key>
 			<true/>

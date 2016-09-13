@@ -20,6 +20,11 @@
 		81E88C751D70A0420022A71C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E88C741D70A0420022A71C /* icon.png */; };
 		81E88C771D70A0650022A71C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E88C761D70A0650022A71C /* Foundation.framework */; };
 		81E88C791D70A06D0022A71C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E88C781D70A06D0022A71C /* CoreGraphics.framework */; };
+		F8417DCB1D878E070095CB28 /* JSPatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8417DCA1D878E070095CB28 /* JSPatchController.swift */; };
+		F8417DCD1D878EDF0095CB28 /* JSPatchTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8417DCC1D878EDF0095CB28 /* JSPatchTool.swift */; };
+		F8417DD41D87E0A90095CB28 /* beautifulGirl0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8417DD31D87E0A90095CB28 /* beautifulGirl0.jpg */; };
+		F8417DD61D87F9150095CB28 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8417DD51D87F9150095CB28 /* JavaScriptCore.framework */; };
+		F8417DD81D87FA060095CB28 /* local.js in Resources */ = {isa = PBXBuildFile; fileRef = F8417DD71D87FA060095CB28 /* local.js */; };
 		F862C8AB1D751B060032D2B9 /* CalculateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F862C8AA1D751B060032D2B9 /* CalculateLayout.swift */; };
 		F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */; };
 		F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B341D5C223B00F5A8E7 /* STMacro.swift */; };
@@ -87,7 +92,6 @@
 		81E67E2B1D749C3E0003D065 /* STCalculateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STCalculateController.swift; sourceTree = "<group>"; };
 		81E67E2F1D749C8C0003D065 /* MyCalculateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCalculateView.swift; sourceTree = "<group>"; };
 		81E88C6C1D709C350022A71C /* LinearFitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearFitController.swift; sourceTree = "<group>"; };
-		81E88C6E1D709FBC0022A71C /* StarDeProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarDeProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		81E88C6F1D709FBC0022A71C /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		81E88C701D709FBC0022A71C /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 		81E88C711D709FBC0022A71C /* CalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
@@ -96,6 +100,13 @@
 		81E88C781D70A06D0022A71C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		98FF82BBACFD6E770CF90419 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E06ED9675446CE89DC51A5CF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8417DCA1D878E070095CB28 /* JSPatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSPatchController.swift; sourceTree = "<group>"; };
+		F8417DCC1D878EDF0095CB28 /* JSPatchTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSPatchTool.swift; sourceTree = "<group>"; };
+		F8417DCF1D879D650095CB28 /* StarDeProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StarDeProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8417DD31D87E0A90095CB28 /* beautifulGirl0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beautifulGirl0.jpg; sourceTree = "<group>"; };
+		F8417DD51D87F9150095CB28 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F8417DD71D87FA060095CB28 /* local.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = local.js; sourceTree = "<group>"; };
+		F8417DD91D87FE6B0095CB28 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatch.framework; path = "../../Library/Developer/Xcode/DerivedData/StarDeProject-avxroddxsqrtdwgmejbddmdtlfcc/Build/Products/Debug-iphoneos/JSPatch.framework"; sourceTree = "<group>"; };
 		F862C8AA1D751B060032D2B9 /* CalculateLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateLayout.swift; sourceTree = "<group>"; };
 		F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNavigationController.swift; sourceTree = "<group>"; };
 		F87B8B341D5C223B00F5A8E7 /* STMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMacro.swift; sourceTree = "<group>"; };
@@ -134,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8417DD61D87F9150095CB28 /* JavaScriptCore.framework in Frameworks */,
 				81DAB29F1D77152700A10E8C /* AVFoundation.framework in Frameworks */,
 				81E88C791D70A06D0022A71C /* CoreGraphics.framework in Frameworks */,
 				F8B42F3A1D76C62000FB9415 /* STMathKit.framework in Frameworks */,
@@ -200,7 +212,6 @@
 				81E88C6F1D709FBC0022A71C /* CalculatorViewController.h */,
 				81E88C701D709FBC0022A71C /* CalculatorViewController.m */,
 				81E88C711D709FBC0022A71C /* CalculatorViewController.xib */,
-				81E88C6E1D709FBC0022A71C /* StarDeProject-Bridging-Header.h */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -216,6 +227,8 @@
 		88301A2384EC0D0319459DB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8417DD91D87FE6B0095CB28 /* JSPatch.framework */,
+				F8417DD51D87F9150095CB28 /* JavaScriptCore.framework */,
 				81DAB29E1D77152700A10E8C /* AVFoundation.framework */,
 				81E88C781D70A06D0022A71C /* CoreGraphics.framework */,
 				81E88C761D70A0650022A71C /* Foundation.framework */,
@@ -231,6 +244,23 @@
 				98FF82BBACFD6E770CF90419 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8417DC91D878DBD0095CB28 /* 热修复 */ = {
+			isa = PBXGroup;
+			children = (
+				F8417DCA1D878E070095CB28 /* JSPatchController.swift */,
+				F8417DCC1D878EDF0095CB28 /* JSPatchTool.swift */,
+			);
+			path = "热修复";
+			sourceTree = "<group>";
+		};
+		F8417DD21D87E0920095CB28 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F8417DD31D87E0A90095CB28 /* beautifulGirl0.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		F844ADDC1D73C52400C888B6 /* MyCalculator */ = {
@@ -296,6 +326,7 @@
 		F88106221D596E31008A0EA3 /* StarDeProject */ = {
 			isa = PBXGroup;
 			children = (
+				F8417DD71D87FA060095CB28 /* local.js */,
 				F88106541D59B5DB008A0EA3 /* HelpTools */,
 				F88106551D59B5DB008A0EA3 /* Resource */,
 				F88106561D59B5DB008A0EA3 /* ThirdPartys */,
@@ -338,6 +369,8 @@
 		F88106551D59B5DB008A0EA3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F8417DD21D87E0920095CB28 /* Images */,
+				F8417DCF1D879D650095CB28 /* StarDeProject-Bridging-Header.h */,
 				81E88C741D70A0420022A71C /* icon.png */,
 				F88106231D596E31008A0EA3 /* AppDelegate.swift */,
 				F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */,
@@ -399,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */,
+				F8417DC91D878DBD0095CB28 /* 热修复 */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -531,9 +565,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8417DD41D87E0A90095CB28 /* beautifulGirl0.jpg in Resources */,
 				F88106311D596E31008A0EA3 /* LaunchScreen.storyboard in Resources */,
 				81E88C751D70A0420022A71C /* icon.png in Resources */,
 				F881062E1D596E31008A0EA3 /* Assets.xcassets in Resources */,
+				F8417DD81D87FA060095CB28 /* local.js in Resources */,
 				81E88C731D709FBC0022A71C /* CalculatorViewController.xib in Resources */,
 				F88106291D596E31008A0EA3 /* Main.storyboard in Resources */,
 			);
@@ -609,6 +645,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E88C721D709FBC0022A71C /* CalculatorViewController.m in Sources */,
+				F8417DCD1D878EDF0095CB28 /* JSPatchTool.swift in Sources */,
 				81B5D5081D68DA61006D5834 /* StringHandle.swift in Sources */,
 				F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */,
 				81E67E2E1D749C3E0003D065 /* STCalculateController.swift in Sources */,
@@ -623,6 +660,7 @@
 				F8E47ED31D8693E600850F8F /* InfiniteScrollPicker.m in Sources */,
 				F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */,
 				F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */,
+				F8417DCB1D878E070095CB28 /* JSPatchController.swift in Sources */,
 				F8E47ED41D8693E600850F8F /* UIView+viewController.m in Sources */,
 				F862C8AB1D751B060032D2B9 /* CalculateLayout.swift in Sources */,
 				81E67E301D749C8C0003D065 /* MyCalculateView.swift in Sources */,
@@ -790,7 +828,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/Resource/StarDeProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -815,7 +853,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/ViewControllers/MathVC/Calculator/StarDeProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/Resource/StarDeProject-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

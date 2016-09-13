@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import JSPatch
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -24,6 +24,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = nav
         window?.backgroundColor = UIColor.whiteColor()
         window?.makeKeyAndVisible()
+        
+        //启动脚本三部曲
+//        let jsTool = JSPatchTool()
+//        jsTool.checkBundleScript()
+//        jsTool.checkScriptFromServer()
+//        jsTool.startJSPatch()
+        
+        let path = NSBundle.mainBundle().pathForResource("local", ofType: "js")
+        do {
+            let patch = try String(contentsOfFile: path!)
+            
+            JPEngine.startEngine()
+            JPEngine.evaluateScript(patch)
+            
+        } catch {}
+        
         return true
     }
 

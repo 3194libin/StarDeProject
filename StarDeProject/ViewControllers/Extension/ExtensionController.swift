@@ -44,7 +44,7 @@ class ExtensionController: STBaseController,ScrollPickerDataSource,ScrollPickerD
         view.layer.masksToBounds = true
         view.layer.cornerRadius = view.bounds.size.width/2
         let label = UILabel.init()
-        label.bounds = CGRectMake(0, 0, 100, 50)
+        label.bounds = CGRectMake(0, 0, 150, 50)
         label.center = view.center
         label.textAlignment = NSTextAlignment.Center
         label.text = functionArray![index]
@@ -56,6 +56,8 @@ class ExtensionController: STBaseController,ScrollPickerDataSource,ScrollPickerD
         {
         case 0:
             print("进入热修复")
+            let jsVC = JSPatchController()
+            self.navigationController?.pushViewController(jsVC, animated: true)
             break
         default:
             break

@@ -8,3 +8,6 @@ pod 'SnapKit'
 
 use_frameworks!
 pod 'Kingfisher'
+
+use_frameworks!
+pod 'JSPatch'
