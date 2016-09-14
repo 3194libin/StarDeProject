@@ -103,6 +103,13 @@ class HomeViewController: STBaseController,UITableViewDelegate,UITableViewDataSo
         webVC.stUrl = nextUrls![indexPath.row]
         self.navigationController?.pushViewController(webVC, animated: true)
     }
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        //出现时的缩放效果
+        cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 1)
+        UIView.animateWithDuration(1) { 
+            cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
+        }
+    }
     
     func setNextUrls(){
         

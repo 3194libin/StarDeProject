@@ -12,9 +12,22 @@ class UIController: STBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    override func loadView() {
+        super.loadView()
         self.view.backgroundColor = UIColor.orangeColor()
         setNavigation("UI", hasBackBtn: false)
-        // Do any additional setup after loading the view.
+        //设置背景的渐变色
+        let gradualLayer = CAGradientLayer()
+        gradualLayer.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64-44)
+        self.view.layer.addSublayer(gradualLayer)
+        //颜色分配
+        gradualLayer.colors = [UIColor.cyanColor().CGColor,UIColor.magentaColor().CGColor,UIColor.purpleColor().CGColor]
+        gradualLayer.locations = [0.25,0.5,0.75]
+        gradualLayer.startPoint = CGPointMake(0, 0)
+        gradualLayer.endPoint = CGPointMake(0, 1)
     }
 
     override func didReceiveMemoryWarning() {

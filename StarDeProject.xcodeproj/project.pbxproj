@@ -25,6 +25,9 @@
 		F8417DD41D87E0A90095CB28 /* beautifulGirl0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8417DD31D87E0A90095CB28 /* beautifulGirl0.jpg */; };
 		F8417DD61D87F9150095CB28 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8417DD51D87F9150095CB28 /* JavaScriptCore.framework */; };
 		F8417DD81D87FA060095CB28 /* local.js in Resources */ = {isa = PBXBuildFile; fileRef = F8417DD71D87FA060095CB28 /* local.js */; };
+		F846A5B81D88D6B8002C6400 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F846A5B71D88D6B8002C6400 /* STMathKit.framework */; };
+		F846A5B91D88D6F8002C6400 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F846A5B71D88D6B8002C6400 /* STMathKit.framework */; };
+		F846A5BA1D88D6F8002C6400 /* STMathKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F846A5B71D88D6B8002C6400 /* STMathKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F862C8AB1D751B060032D2B9 /* CalculateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F862C8AA1D751B060032D2B9 /* CalculateLayout.swift */; };
 		F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */; };
 		F87B8B351D5C223B00F5A8E7 /* STMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B8B341D5C223B00F5A8E7 /* STMacro.swift */; };
@@ -39,14 +42,9 @@
 		F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88106591D59B79D008A0EA3 /* HomeViewController.swift */; };
 		F8AC2B6C1D81035000F1EC57 /* UIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC2B6B1D81035000F1EC57 /* UIController.swift */; };
 		F8ADC10D1D6D7056003B5D42 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADC10C1D6D7056003B5D42 /* WebController.swift */; };
-		F8B42F3A1D76C62000FB9415 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F391D76C62000FB9415 /* STMathKit.framework */; };
-		F8B42F401D76CB9800FB9415 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */; };
-		F8B42F411D76CBB200FB9415 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */; };
-		F8B42F421D76CBB200FB9415 /* STMathKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8B42F451D76CF9300FB9415 /* CalculateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B42F441D76CF9300FB9415 /* CalculateTool.swift */; };
 		F8B439081D7FBDF8008B5518 /* StarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B439071D7FBDF8008B5518 /* StarTest.swift */; };
 		F8B4390A1D7FBF8D008B5518 /* StarDeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B439091D7FBF8D008B5518 /* StarDeProjectTests.swift */; };
-		F8CCB2371D6F569500B7D7D3 /* STMathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */; };
 		F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */; };
 		F8E47ED31D8693E600850F8F /* InfiniteScrollPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E47ED01D8693E600850F8F /* InfiniteScrollPicker.m */; };
 		F8E47ED41D8693E600850F8F /* UIView+viewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E47ED21D8693E600850F8F /* UIView+viewController.m */; };
@@ -76,7 +74,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F8B42F421D76CBB200FB9415 /* STMathKit.framework in Embed Frameworks */,
+				F846A5BA1D88D6F8002C6400 /* STMathKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,11 +100,12 @@
 		E06ED9675446CE89DC51A5CF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8417DCA1D878E070095CB28 /* JSPatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSPatchController.swift; sourceTree = "<group>"; };
 		F8417DCC1D878EDF0095CB28 /* JSPatchTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSPatchTool.swift; sourceTree = "<group>"; };
-		F8417DCF1D879D650095CB28 /* StarDeProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StarDeProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		F8417DD31D87E0A90095CB28 /* beautifulGirl0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beautifulGirl0.jpg; sourceTree = "<group>"; };
 		F8417DD51D87F9150095CB28 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F8417DD71D87FA060095CB28 /* local.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = local.js; sourceTree = "<group>"; };
 		F8417DD91D87FE6B0095CB28 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatch.framework; path = "../../Library/Developer/Xcode/DerivedData/StarDeProject-avxroddxsqrtdwgmejbddmdtlfcc/Build/Products/Debug-iphoneos/JSPatch.framework"; sourceTree = "<group>"; };
+		F846A5B71D88D6B8002C6400 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STMathKit.framework; sourceTree = "<group>"; };
+		F846A5F81D894AA4002C6400 /* BridgrHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgrHeader.h; sourceTree = "<group>"; };
 		F862C8AA1D751B060032D2B9 /* CalculateLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateLayout.swift; sourceTree = "<group>"; };
 		F87B8B311D5C124D00F5A8E7 /* STNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STNavigationController.swift; sourceTree = "<group>"; };
 		F87B8B341D5C223B00F5A8E7 /* STMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMacro.swift; sourceTree = "<group>"; };
@@ -127,12 +126,9 @@
 		F88106591D59B79D008A0EA3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F8AC2B6B1D81035000F1EC57 /* UIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIController.swift; sourceTree = "<group>"; };
 		F8ADC10C1D6D7056003B5D42 /* WebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
-		F8B42F391D76C62000FB9415 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STMathKit.framework; path = /Users/star/Desktop/StarDeProject/StarDeProject/ThirdPartys/STMathKit.framework; sourceTree = "<absolute>"; };
-		F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STMathKit.framework; sourceTree = "<group>"; };
 		F8B42F441D76CF9300FB9415 /* CalculateTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateTool.swift; sourceTree = "<group>"; };
 		F8B439071D7FBDF8008B5518 /* StarTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTest.swift; sourceTree = "<group>"; };
 		F8B439091D7FBF8D008B5518 /* StarDeProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarDeProjectTests.swift; sourceTree = "<group>"; };
-		F8CCB2361D6F569500B7D7D3 /* STMathKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STMathKit.framework; path = /Users/star/Desktop/StarDeProject/StarDeProject/ThirdPartys/STMathKit.framework; sourceTree = "<absolute>"; };
 		F8D7930D1D6AD80E006D2209 /* ExtensionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
 		F8E47ECF1D8693E600850F8F /* InfiniteScrollPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollPicker.h; sourceTree = "<group>"; };
 		F8E47ED01D8693E600850F8F /* InfiniteScrollPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollPicker.m; sourceTree = "<group>"; };
@@ -148,11 +144,9 @@
 				F8417DD61D87F9150095CB28 /* JavaScriptCore.framework in Frameworks */,
 				81DAB29F1D77152700A10E8C /* AVFoundation.framework in Frameworks */,
 				81E88C791D70A06D0022A71C /* CoreGraphics.framework in Frameworks */,
-				F8B42F3A1D76C62000FB9415 /* STMathKit.framework in Frameworks */,
 				81E88C771D70A0650022A71C /* Foundation.framework in Frameworks */,
-				F8CCB2371D6F569500B7D7D3 /* STMathKit.framework in Frameworks */,
-				F8B42F411D76CBB200FB9415 /* STMathKit.framework in Frameworks */,
-				F8B42F401D76CB9800FB9415 /* STMathKit.framework in Frameworks */,
+				F846A5B91D88D6F8002C6400 /* STMathKit.framework in Frameworks */,
+				F846A5B81D88D6B8002C6400 /* STMathKit.framework in Frameworks */,
 				251AD5A2CE6AB6D86ECDB8E3 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				F8417DD71D87FA060095CB28 /* local.js */,
+				F846A5F81D894AA4002C6400 /* BridgrHeader.h */,
 				F88106541D59B5DB008A0EA3 /* HelpTools */,
 				F88106551D59B5DB008A0EA3 /* Resource */,
 				F88106561D59B5DB008A0EA3 /* ThirdPartys */,
@@ -370,7 +365,6 @@
 			isa = PBXGroup;
 			children = (
 				F8417DD21D87E0920095CB28 /* Images */,
-				F8417DCF1D879D650095CB28 /* StarDeProject-Bridging-Header.h */,
 				81E88C741D70A0420022A71C /* icon.png */,
 				F88106231D596E31008A0EA3 /* AppDelegate.swift */,
 				F87B8B371D5C454000F5A8E7 /* HomeTabbarController.swift */,
@@ -386,7 +380,7 @@
 		F88106561D59B5DB008A0EA3 /* ThirdPartys */ = {
 			isa = PBXGroup;
 			children = (
-				F8B42F3F1D76CB9800FB9415 /* STMathKit.framework */,
+				F846A5B71D88D6B8002C6400 /* STMathKit.framework */,
 			);
 			path = ThirdPartys;
 			sourceTree = "<group>";
@@ -828,7 +822,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/Resource/StarDeProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = StarDeProject/BridgrHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -853,7 +847,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chinatelecom.yueme.StarDeProject;
 				PRODUCT_NAME = "水田夏木";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "StarDeProject/Resource/StarDeProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = StarDeProject/BridgrHeader.h;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

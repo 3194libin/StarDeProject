@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-import JSPatch
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -31,14 +30,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        jsTool.checkScriptFromServer()
 //        jsTool.startJSPatch()
         
-        let path = NSBundle.mainBundle().pathForResource("local", ofType: "js")
-        do {
-            let patch = try String(contentsOfFile: path!)
-            
-            JPEngine.startEngine()
-            JPEngine.evaluateScript(patch)
-            
-        } catch {}
+//        let path = NSBundle.mainBundle().pathForResource("local", ofType: "js")
+//        do {
+//            let patch = try String(contentsOfFile: path!)
+//            
+//            JPEngine.startEngine()
+//            let jsValue = JPEngine.evaluateScript(patch)
+//            print("运行脚本的结果为\(jsValue.context.name)")
+//        } catch {
+//            print("捕获到抛出的异常")
+//        }
         
         return true
     }

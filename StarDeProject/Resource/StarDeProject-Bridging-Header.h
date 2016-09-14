@@ -5,8 +5,8 @@
 #define StarDeProject_Bridging_Header_h
 
 //必须这样写？
+//#import "JPEngine.h"
 #import <JSPatch/JPEngine.h>
-
 #import "CalculatorViewController.h"
 #import "InfiniteScrollPicker.h"
 
