@@ -12,13 +12,13 @@ class UIController: STBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //果然是先后顺序的问题，效果后续微调
+        setNavigation("UI", hasBackBtn: false)
         // Do any additional setup after loading the view.
     }
     override func loadView() {
         super.loadView()
         self.view.backgroundColor = UIColor.orangeColor()
-        setNavigation("UI", hasBackBtn: false)
         //设置背景的渐变色
         let gradualLayer = CAGradientLayer()
         gradualLayer.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64-44)
@@ -32,7 +32,6 @@ class UIController: STBaseController {
         
         //加载View 
         let mainView = UIMainView.init(frame: CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64-44))
-        //mainView.backgroundColor = UIColor.yellowColor()
         self.view.addSubview(mainView)
         //和block的写法一样
         mainView.clickOperation = { (click0:ClickType)->Void in

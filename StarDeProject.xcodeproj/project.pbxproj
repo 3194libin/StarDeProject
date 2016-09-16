@@ -13,6 +13,9 @@
 		81AEB7821D8BD27000CEC67C /* danymicEffect.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AEB7811D8BD27000CEC67C /* danymicEffect.png */; };
 		81AEB7841D8BD27500CEC67C /* dataPreView.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AEB7831D8BD27500CEC67C /* dataPreView.png */; };
 		81AEB7861D8BD27B00CEC67C /* myControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AEB7851D8BD27B00CEC67C /* myControl.png */; };
+		81AEB7971D8C428F00CEC67C /* ParticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AEB7961D8C428F00CEC67C /* ParticleView.swift */; };
+		81AEB7991D8C42AA00CEC67C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81AEB7981D8C42AA00CEC67C /* QuartzCore.framework */; };
+		81AEB79B1D8C447400CEC67C /* leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AEB79A1D8C447400CEC67C /* leaf.png */; };
 		81B5D5081D68DA61006D5834 /* StringHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5D5071D68DA61006D5834 /* StringHandle.swift */; };
 		81DAB29D1D770F1900A10E8C /* CalculateResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DAB29C1D770F1900A10E8C /* CalculateResult.swift */; };
 		81DAB29F1D77152700A10E8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DAB29E1D77152700A10E8C /* AVFoundation.framework */; };
@@ -92,6 +95,9 @@
 		81AEB7811D8BD27000CEC67C /* danymicEffect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = danymicEffect.png; sourceTree = "<group>"; };
 		81AEB7831D8BD27500CEC67C /* dataPreView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dataPreView.png; sourceTree = "<group>"; };
 		81AEB7851D8BD27B00CEC67C /* myControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myControl.png; sourceTree = "<group>"; };
+		81AEB7961D8C428F00CEC67C /* ParticleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleView.swift; sourceTree = "<group>"; };
+		81AEB7981D8C42AA00CEC67C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		81AEB79A1D8C447400CEC67C /* leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf.png; sourceTree = "<group>"; };
 		81B5D5071D68DA61006D5834 /* StringHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHandle.swift; sourceTree = "<group>"; };
 		81DAB29C1D770F1900A10E8C /* CalculateResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateResult.swift; sourceTree = "<group>"; };
 		81DAB29E1D77152700A10E8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -149,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81AEB7991D8C42AA00CEC67C /* QuartzCore.framework in Frameworks */,
 				F8417DD61D87F9150095CB28 /* JavaScriptCore.framework in Frameworks */,
 				81DAB29F1D77152700A10E8C /* AVFoundation.framework in Frameworks */,
 				81E88C791D70A06D0022A71C /* CoreGraphics.framework in Frameworks */,
@@ -229,6 +236,7 @@
 		88301A2384EC0D0319459DB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81AEB7981D8C42AA00CEC67C /* QuartzCore.framework */,
 				F8417DD91D87FE6B0095CB28 /* JSPatch.framework */,
 				F8417DD51D87F9150095CB28 /* JavaScriptCore.framework */,
 				81DAB29E1D77152700A10E8C /* AVFoundation.framework */,
@@ -264,6 +272,7 @@
 				81AEB7831D8BD27500CEC67C /* dataPreView.png */,
 				81AEB7811D8BD27000CEC67C /* danymicEffect.png */,
 				F8417DD31D87E0A90095CB28 /* beautifulGirl0.jpg */,
+				81AEB79A1D8C447400CEC67C /* leaf.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -421,6 +430,7 @@
 			children = (
 				F8AC2B6B1D81035000F1EC57 /* UIController.swift */,
 				81AEB77F1D8BB3F600CEC67C /* UIMainView.swift */,
+				81AEB7961D8C428F00CEC67C /* ParticleView.swift */,
 			);
 			path = UITest;
 			sourceTree = "<group>";
@@ -575,6 +585,7 @@
 				F88106311D596E31008A0EA3 /* LaunchScreen.storyboard in Resources */,
 				81E88C751D70A0420022A71C /* icon.png in Resources */,
 				F881062E1D596E31008A0EA3 /* Assets.xcassets in Resources */,
+				81AEB79B1D8C447400CEC67C /* leaf.png in Resources */,
 				F8417DD81D87FA060095CB28 /* local.js in Resources */,
 				81E88C731D709FBC0022A71C /* CalculatorViewController.xib in Resources */,
 				81AEB7821D8BD27000CEC67C /* danymicEffect.png in Resources */,
@@ -656,6 +667,7 @@
 				81E88C721D709FBC0022A71C /* CalculatorViewController.m in Sources */,
 				F8417DCD1D878EDF0095CB28 /* JSPatchTool.swift in Sources */,
 				81B5D5081D68DA61006D5834 /* StringHandle.swift in Sources */,
+				81AEB7971D8C428F00CEC67C /* ParticleView.swift in Sources */,
 				F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */,
 				81E67E2E1D749C3E0003D065 /* STCalculateController.swift in Sources */,
 				F88106241D596E31008A0EA3 /* AppDelegate.swift in Sources */,
