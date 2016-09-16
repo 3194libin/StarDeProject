@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		251AD5A2CE6AB6D86ECDB8E3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06ED9675446CE89DC51A5CF /* Pods.framework */; };
 		810E9D251D66106B0064E6A7 /* STBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E9D241D66106B0064E6A7 /* STBaseController.swift */; };
+		81AEB7801D8BB3F600CEC67C /* UIMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AEB77F1D8BB3F600CEC67C /* UIMainView.swift */; };
+		81AEB7821D8BD27000CEC67C /* danymicEffect.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AEB7811D8BD27000CEC67C /* danymicEffect.png */; };
+		81AEB7841D8BD27500CEC67C /* dataPreView.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AEB7831D8BD27500CEC67C /* dataPreView.png */; };
+		81AEB7861D8BD27B00CEC67C /* myControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AEB7851D8BD27B00CEC67C /* myControl.png */; };
 		81B5D5081D68DA61006D5834 /* StringHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5D5071D68DA61006D5834 /* StringHandle.swift */; };
 		81DAB29D1D770F1900A10E8C /* CalculateResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DAB29C1D770F1900A10E8C /* CalculateResult.swift */; };
 		81DAB29F1D77152700A10E8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DAB29E1D77152700A10E8C /* AVFoundation.framework */; };
@@ -84,6 +88,10 @@
 /* Begin PBXFileReference section */
 		31358786458889026D365BF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		810E9D241D66106B0064E6A7 /* STBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STBaseController.swift; sourceTree = "<group>"; };
+		81AEB77F1D8BB3F600CEC67C /* UIMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMainView.swift; sourceTree = "<group>"; };
+		81AEB7811D8BD27000CEC67C /* danymicEffect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = danymicEffect.png; sourceTree = "<group>"; };
+		81AEB7831D8BD27500CEC67C /* dataPreView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dataPreView.png; sourceTree = "<group>"; };
+		81AEB7851D8BD27B00CEC67C /* myControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myControl.png; sourceTree = "<group>"; };
 		81B5D5071D68DA61006D5834 /* StringHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHandle.swift; sourceTree = "<group>"; };
 		81DAB29C1D770F1900A10E8C /* CalculateResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateResult.swift; sourceTree = "<group>"; };
 		81DAB29E1D77152700A10E8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -252,6 +260,9 @@
 		F8417DD21D87E0920095CB28 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				81AEB7851D8BD27B00CEC67C /* myControl.png */,
+				81AEB7831D8BD27500CEC67C /* dataPreView.png */,
+				81AEB7811D8BD27000CEC67C /* danymicEffect.png */,
 				F8417DD31D87E0A90095CB28 /* beautifulGirl0.jpg */,
 			);
 			path = Images;
@@ -409,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				F8AC2B6B1D81035000F1EC57 /* UIController.swift */,
+				81AEB77F1D8BB3F600CEC67C /* UIMainView.swift */,
 			);
 			path = UITest;
 			sourceTree = "<group>";
@@ -565,6 +577,9 @@
 				F881062E1D596E31008A0EA3 /* Assets.xcassets in Resources */,
 				F8417DD81D87FA060095CB28 /* local.js in Resources */,
 				81E88C731D709FBC0022A71C /* CalculatorViewController.xib in Resources */,
+				81AEB7821D8BD27000CEC67C /* danymicEffect.png in Resources */,
+				81AEB7861D8BD27B00CEC67C /* myControl.png in Resources */,
+				81AEB7841D8BD27500CEC67C /* dataPreView.png in Resources */,
 				F88106291D596E31008A0EA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +670,7 @@
 				F881062C1D596E31008A0EA3 /* StarDeProject.xcdatamodeld in Sources */,
 				F881065A1D59B79D008A0EA3 /* HomeViewController.swift in Sources */,
 				F8417DCB1D878E070095CB28 /* JSPatchController.swift in Sources */,
+				81AEB7801D8BB3F600CEC67C /* UIMainView.swift in Sources */,
 				F8E47ED41D8693E600850F8F /* UIView+viewController.m in Sources */,
 				F862C8AB1D751B060032D2B9 /* CalculateLayout.swift in Sources */,
 				81E67E301D749C8C0003D065 /* MyCalculateView.swift in Sources */,

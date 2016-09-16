@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>JSPatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -53,6 +58,21 @@
 			<true/>
 		</dict>
 		<key>A84249C2E3B205D4D36B8F32E5DB2211</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB40B6BE6D5D7EBA3DEFA82F94515AC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B13574E17EED8AAA9A85CE67AD5B4570</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDAF5F36F9E62C49FAE206F59383F15C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
