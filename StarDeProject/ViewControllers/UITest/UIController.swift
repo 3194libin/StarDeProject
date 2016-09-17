@@ -38,12 +38,12 @@ class UIController: STBaseController {
             switch click0 {
             case .leftClick:
                 print("获取到左侧的点击事件")
+                let myControl = MyControlController()
+                self.navigationController?.pushViewController(myControl, animated: true)
             case .rightUpClick:
                 print("获取到右侧上方的点击事件")
             case .rightDownClick:
                 print("获取到右侧下方的点击事件")
-            default:
-                print("进入默认选项")
             }
         }
     }

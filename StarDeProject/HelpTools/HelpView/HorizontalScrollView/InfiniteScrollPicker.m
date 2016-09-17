@@ -93,7 +93,7 @@
     float tapX = [tap locationInView:self].x;
     int index = floor(tapX)/_itemSize.width;
     NSInteger tapIndex =index%([self.dataSource viewAmount]);
-    NSLog(@"index为%d",index%([self.dataSource viewAmount]));
+    NSLog(@"index为%ld",index%([self.dataSource viewAmount]));
     if (self.tapDelegate && [self.tapDelegate respondsToSelector:@selector(didTapViewAtIndex:)])
     {
         [self.tapDelegate didTapViewAtIndex:tapIndex];
@@ -155,7 +155,7 @@
             float tOffset = (view.center.x - offset) - self.frame.size.width/4;
             
             if (tOffset < 0 || tOffset > self.frame.size.width) tOffset = 0;
-            float addHeight = (-1 * fabsf((tOffset)*2 - self.frame.size.width/2) + self.frame.size.width/2)/4;
+            float addHeight = (-1 * fabs((tOffset)*2 - self.frame.size.width/2) + self.frame.size.width/2)/4;
             
             if (addHeight < 0) addHeight = 0;
             
@@ -219,13 +219,13 @@
     }
     
     float biggestViewX = biggestView.frame.origin.x + biggestView.frame.size.width/2 - self.frame.size.width/2;
-    float dX = self.contentOffset.x - biggestViewX;
+    //float dX = self.contentOffset.x - biggestViewX;
     NSLog(@"当前偏移量为:%f－－－%f",self.contentOffset.x,CGRectGetMidX(biggestView.frame));
     //每次该偏移量都计算的不一样，所以需要改动
-    float newX = self.contentOffset.x - dX/1.4;
+    //float newX = self.contentOffset.x - dX/1.4;
     
     //增加计算实际偏移量的方法，
-    int a = (biggestViewX-2985)/_itemSize.width;
+    //int a = (biggestViewX-2985)/_itemSize.width;
     // Disable scrolling when snapping to new location
     dispatch_queue_t queue = dispatch_get_main_queue();
     dispatch_async(queue, ^ {

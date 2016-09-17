@@ -78,7 +78,7 @@
 -(IBAction)buttonClicked:(id)sender
 {
 	UIButton *btn = (UIButton *)sender;
-	int tag = btn.tag;
+	NSInteger tag = btn.tag;
 	
 	switch (tag) 
 	{

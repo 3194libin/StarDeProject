@@ -10,14 +10,14 @@ import UIKit
 
 class StringHandle: NSObject {
     
-    func extractImageWebsite(text:String) -> NSArray {
-        //需要一个解析网络数据的类
-//        NSArray *matchArray = NULL;
-//        matchArray = [htmlStr componentsMatchedByRegex:regexString];
-        var stringArray:Array = Array<String>()
-        let regexString = "sdjofji"
-        return stringArray
-    }
+//    func extractImageWebsite(text:String) -> NSArray {
+//        //需要一个解析网络数据的类
+////        NSArray *matchArray = NULL;
+////        matchArray = [htmlStr componentsMatchedByRegex:regexString];
+//        var stringArray:Array = Array<String>()
+//        let regexString = "sdjofji"
+//        return stringArray
+//    }
 }
 /*
 NSString *searchText = @"// Do any additional setup after loading the view, typically from a nib.";

@@ -20,7 +20,6 @@ class HomeTabbarController: UITabBarController {
     //单糖的方法感觉不好
     private func setTabbarController(){
        
-        let fontSize:CGFloat = 25.0
         let homeVC = HomeViewController()
         homeVC.tabBarItem.title = "主页"
         homeVC.tabBarItem.image = UIImage(named: "TabBar_home_23x23_")

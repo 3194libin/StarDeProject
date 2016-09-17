@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		251AD5A2CE6AB6D86ECDB8E3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06ED9675446CE89DC51A5CF /* Pods.framework */; };
 		810E9D251D66106B0064E6A7 /* STBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E9D241D66106B0064E6A7 /* STBaseController.swift */; };
+		8142BA3A1D8D511100E1D270 /* MyControlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142BA391D8D511100E1D270 /* MyControlController.swift */; };
+		8142BA3D1D8D526E00E1D270 /* STLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142BA3C1D8D526E00E1D270 /* STLabel.swift */; };
 		81AEB7801D8BB3F600CEC67C /* UIMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AEB77F1D8BB3F600CEC67C /* UIMainView.swift */; };
 		81AEB7821D8BD27000CEC67C /* danymicEffect.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AEB7811D8BD27000CEC67C /* danymicEffect.png */; };
 		81AEB7841D8BD27500CEC67C /* dataPreView.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AEB7831D8BD27500CEC67C /* dataPreView.png */; };
@@ -91,6 +93,8 @@
 /* Begin PBXFileReference section */
 		31358786458889026D365BF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		810E9D241D66106B0064E6A7 /* STBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STBaseController.swift; sourceTree = "<group>"; };
+		8142BA391D8D511100E1D270 /* MyControlController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyControlController.swift; sourceTree = "<group>"; };
+		8142BA3C1D8D526E00E1D270 /* STLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STLabel.swift; sourceTree = "<group>"; };
 		81AEB77F1D8BB3F600CEC67C /* UIMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMainView.swift; sourceTree = "<group>"; };
 		81AEB7811D8BD27000CEC67C /* danymicEffect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = danymicEffect.png; sourceTree = "<group>"; };
 		81AEB7831D8BD27500CEC67C /* dataPreView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dataPreView.png; sourceTree = "<group>"; };
@@ -183,6 +187,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8142BA341D8D4FBD00E1D270 /* DanamicEffect */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DanamicEffect;
+			sourceTree = "<group>";
+		};
+		8142BA351D8D4FBD00E1D270 /* DataBrowse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBrowse;
+			sourceTree = "<group>";
+		};
+		8142BA361D8D4FBD00E1D270 /* MyControl */ = {
+			isa = PBXGroup;
+			children = (
+				8142BA3B1D8D525500E1D270 /* View */,
+				8142BA391D8D511100E1D270 /* MyControlController.swift */,
+			);
+			path = MyControl;
+			sourceTree = "<group>";
+		};
+		8142BA3B1D8D525500E1D270 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8142BA3C1D8D526E00E1D270 /* STLabel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		81B5D5061D68DA49006D5834 /* StringHandle */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +463,9 @@
 		F8AC2B6A1D8102D700F1EC57 /* UITest */ = {
 			isa = PBXGroup;
 			children = (
+				8142BA361D8D4FBD00E1D270 /* MyControl */,
+				8142BA341D8D4FBD00E1D270 /* DanamicEffect */,
+				8142BA351D8D4FBD00E1D270 /* DataBrowse */,
 				F8AC2B6B1D81035000F1EC57 /* UIController.swift */,
 				81AEB77F1D8BB3F600CEC67C /* UIMainView.swift */,
 				81AEB7961D8C428F00CEC67C /* ParticleView.swift */,
@@ -669,6 +707,7 @@
 				81B5D5081D68DA61006D5834 /* StringHandle.swift in Sources */,
 				81AEB7971D8C428F00CEC67C /* ParticleView.swift in Sources */,
 				F8D7930E1D6AD80E006D2209 /* ExtensionController.swift in Sources */,
+				8142BA3A1D8D511100E1D270 /* MyControlController.swift in Sources */,
 				81E67E2E1D749C3E0003D065 /* STCalculateController.swift in Sources */,
 				F88106241D596E31008A0EA3 /* AppDelegate.swift in Sources */,
 				F87B8B321D5C124D00F5A8E7 /* STNavigationController.swift in Sources */,
@@ -689,6 +728,7 @@
 				81E88C6D1D709C350022A71C /* LinearFitController.swift in Sources */,
 				F8B42F451D76CF9300FB9415 /* CalculateTool.swift in Sources */,
 				810E9D251D66106B0064E6A7 /* STBaseController.swift in Sources */,
+				8142BA3D1D8D526E00E1D270 /* STLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

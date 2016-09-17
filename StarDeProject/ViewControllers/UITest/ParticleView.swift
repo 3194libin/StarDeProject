@@ -26,10 +26,10 @@ class ParticleView: UIView {
         
         //CAEmitterCell
         let fire = CAEmitterCell()
-        fire.birthRate = 1;
+        fire.birthRate = 10;
         fire.lifetime = 5.0;
         fire.lifetimeRange = 1;
-        fire.contents = [UIImage.init(imageLiteral: "leaf.png") as AnyObject]
+        fire.contents = UIImage.init(imageLiteral: "leaf.png").CGImage
         fire.velocity = 50;
         fire.velocityRange = 30;
         fire.emissionRange = CGFloat(M_PI*2);
